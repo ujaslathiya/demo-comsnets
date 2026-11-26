@@ -1,0 +1,2639 @@
+file 17604847 1787206047                                        
+version 3
+run General-0-20260820-11:37:26-2819933
+attr configname General
+attr datetime 20260820-11:37:26
+attr datetimef 20260820-113726
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network ring_topology.RingTopology
+attr processid 2819933
+attr repetition 0
+attr replication #0
+attr resultdir results/run_99
+attr runnumber 0
+attr seedset 99
+config result-dir results/run_99
+config seed-set 99
+config sim-time-limit 10.0s
+config network ring_topology.RingTopology
+config sim-time-limit 1s
+config cmdenv-express-mode true
+config cmdenv-event-banners false
+config **.scheduler.tick 80ns
+config **.scheduler.numPeriods 1
+config **.scheduler.period[0].cycle_ticks sec_to_tick(1ms)
+config **.scheduler.oscillator.max_drift 200ppm
+config **.scheduler.oscillator.drift_change uniform(-50ppm,50ppm)
+config **.precission 500ns
+config **.gateControlList.period "\"period[0]\""
+config **.pcpSRClassA 7
+config **.pcpSRClassB 6
+config *.CAN_FD_Bus_A.bandwidth 2000kbps
+config *.CAN_FD_Bus_A.dataBitrate 5000kbps
+config *.CAN_FD_Node_A0.numSourceApps 1
+config *.CAN_FD_Node_A0.sourceApp[0].typename CanTrafficSourceAppBase
+config *.CAN_FD_Node_A0.sourceApp[0].idDataFrames "\"300\""
+config *.CAN_FD_Node_A0.sourceApp[0].periodicityDataFrames "\"0.002\""
+config *.CAN_FD_Node_A0.sourceApp[0].initialDataFrameOffset "\"0.001\""
+config *.CAN_FD_Node_A0.sourceApp[0].dataLengthDataFrames "\"64\""
+config *.CAN_FD_Node_A0.numSinkApps 1
+config *.CAN_FD_Node_A0.sinkApp[0].typename CanTrafficSinkAppBase
+config *.CAN_FD_Node_A0.bufferIn.idIncomingFrames "\"310,320\""
+config *.CAN_FD_Node_A1.numSourceApps 1
+config *.CAN_FD_Node_A1.sourceApp[0].typename CanTrafficSourceAppBase
+config *.CAN_FD_Node_A1.sourceApp[0].idDataFrames "\"310\""
+config *.CAN_FD_Node_A1.sourceApp[0].periodicityDataFrames "\"0.002\""
+config *.CAN_FD_Node_A1.sourceApp[0].initialDataFrameOffset "\"0.002\""
+config *.CAN_FD_Node_A1.sourceApp[0].dataLengthDataFrames "\"64\""
+config *.CAN_FD_Node_A1.numSinkApps 1
+config *.CAN_FD_Node_A1.sinkApp[0].typename CanTrafficSinkAppBase
+config *.CAN_FD_Node_A1.bufferIn.idIncomingFrames "\"300,320\""
+config *.CAN_FD_Node_A2.numSourceApps 1
+config *.CAN_FD_Node_A2.sourceApp[0].typename CanTrafficSourceAppBase
+config *.CAN_FD_Node_A2.sourceApp[0].idDataFrames "\"320\""
+config *.CAN_FD_Node_A2.sourceApp[0].periodicityDataFrames "\"0.002\""
+config *.CAN_FD_Node_A2.sourceApp[0].initialDataFrameOffset "\"0.003\""
+config *.CAN_FD_Node_A2.sourceApp[0].dataLengthDataFrames "\"64\""
+config *.CAN_FD_Node_A2.numSinkApps 1
+config *.CAN_FD_Node_A2.sinkApp[0].typename CanTrafficSinkAppBase
+config *.CAN_FD_Node_A2.bufferIn.idIncomingFrames "\"300,310\""
+config *.CAN_FD_Bus_B.bandwidth 2000kbps
+config *.CAN_FD_Bus_B.dataBitrate 5000kbps
+config *.CAN_FD_Node_B0.numSourceApps 1
+config *.CAN_FD_Node_B0.sourceApp[0].typename CanTrafficSourceAppBase
+config *.CAN_FD_Node_B0.sourceApp[0].idDataFrames "\"400\""
+config *.CAN_FD_Node_B0.sourceApp[0].periodicityDataFrames "\"0.002\""
+config *.CAN_FD_Node_B0.sourceApp[0].initialDataFrameOffset "\"0.001\""
+config *.CAN_FD_Node_B0.sourceApp[0].dataLengthDataFrames "\"64\""
+config *.CAN_FD_Node_B0.numSinkApps 1
+config *.CAN_FD_Node_B0.sinkApp[0].typename CanTrafficSinkAppBase
+config *.CAN_FD_Node_B0.bufferIn.idIncomingFrames "\"410,420\""
+config *.CAN_FD_Node_B1.numSourceApps 1
+config *.CAN_FD_Node_B1.sourceApp[0].typename CanTrafficSourceAppBase
+config *.CAN_FD_Node_B1.sourceApp[0].idDataFrames "\"410\""
+config *.CAN_FD_Node_B1.sourceApp[0].periodicityDataFrames "\"0.002\""
+config *.CAN_FD_Node_B1.sourceApp[0].initialDataFrameOffset "\"0.002\""
+config *.CAN_FD_Node_B1.sourceApp[0].dataLengthDataFrames "\"64\""
+config *.CAN_FD_Node_B1.numSinkApps 1
+config *.CAN_FD_Node_B1.sinkApp[0].typename CanTrafficSinkAppBase
+config *.CAN_FD_Node_B1.bufferIn.idIncomingFrames "\"400,420\""
+config *.CAN_FD_Node_B2.numSourceApps 1
+config *.CAN_FD_Node_B2.sourceApp[0].typename CanTrafficSourceAppBase
+config *.CAN_FD_Node_B2.sourceApp[0].idDataFrames "\"420\""
+config *.CAN_FD_Node_B2.sourceApp[0].periodicityDataFrames "\"0.002\""
+config *.CAN_FD_Node_B2.sourceApp[0].initialDataFrameOffset "\"0.003\""
+config *.CAN_FD_Node_B2.sourceApp[0].dataLengthDataFrames "\"64\""
+config *.CAN_FD_Node_B2.numSinkApps 1
+config *.CAN_FD_Node_B2.sinkApp[0].typename CanTrafficSinkAppBase
+config *.CAN_FD_Node_B2.bufferIn.idIncomingFrames "\"400,410\""
+config *.CAN_Std_Bus.bandwidth 500kbps
+config *.CAN_Std_Node_0.numSourceApps 1
+config *.CAN_Std_Node_0.sourceApp[0].typename CanTrafficSourceAppBase
+config *.CAN_Std_Node_0.sourceApp[0].idDataFrames "\"100\""
+config *.CAN_Std_Node_0.sourceApp[0].periodicityDataFrames "\"0.002\""
+config *.CAN_Std_Node_0.sourceApp[0].initialDataFrameOffset "\"0.001\""
+config *.CAN_Std_Node_0.sourceApp[0].dataLengthDataFrames "\"8\""
+config *.CAN_Std_Node_0.numSinkApps 1
+config *.CAN_Std_Node_0.sinkApp[0].typename CanTrafficSinkAppBase
+config *.CAN_Std_Node_0.bufferIn.idIncomingFrames "\"110,120\""
+config *.CAN_Std_Node_1.numSourceApps 1
+config *.CAN_Std_Node_1.sourceApp[0].typename CanTrafficSourceAppBase
+config *.CAN_Std_Node_1.sourceApp[0].idDataFrames "\"110\""
+config *.CAN_Std_Node_1.sourceApp[0].periodicityDataFrames "\"0.002\""
+config *.CAN_Std_Node_1.sourceApp[0].initialDataFrameOffset "\"0.0015\""
+config *.CAN_Std_Node_1.sourceApp[0].dataLengthDataFrames "\"8\""
+config *.CAN_Std_Node_1.numSinkApps 1
+config *.CAN_Std_Node_1.sinkApp[0].typename CanTrafficSinkAppBase
+config *.CAN_Std_Node_1.bufferIn.idIncomingFrames "\"100,120\""
+config *.CAN_Std_Node_2.numSourceApps 1
+config *.CAN_Std_Node_2.sourceApp[0].typename CanTrafficSourceAppBase
+config *.CAN_Std_Node_2.sourceApp[0].idDataFrames "\"120\""
+config *.CAN_Std_Node_2.sourceApp[0].periodicityDataFrames "\"0.002\""
+config *.CAN_Std_Node_2.sourceApp[0].initialDataFrameOffset "\"0.002\""
+config *.CAN_Std_Node_2.sourceApp[0].dataLengthDataFrames "\"8\""
+config *.CAN_Std_Node_2.numSinkApps 1
+config *.CAN_Std_Node_2.sinkApp[0].typename CanTrafficSinkAppBase
+config *.CAN_Std_Node_2.bufferIn.idIncomingFrames "\"100,110\""
+config *.LIN_Bus.baudRate 20kbps
+config *.LIN_Bus.numGates 4
+config *.LIN_Bus.logic.numGates 4
+config *.LIN_Slave_*.isMaster false
+config *.LIN_Slave_*.baudRate 20kbps
+config *.LIN_Slave_0.signalConfiguration "\"30:0:1\""
+config *.LIN_Slave_1.signalConfiguration "\"31:0:2\""
+config *.LIN_Slave_2.signalConfiguration "\"32:0:3\""
+config *.GW_*.enableAggregation true
+config *.GW_*.enableFragmentation true
+config *.GW_*.processingDelay 0.0001s
+config *.SW_A.phy[*].shaper.transmissionSelectionAlgorithm[7].typename CreditBasedShaper
+config *.SW_A.phy[*].shaper.transmissionSelectionAlgorithm[7].srClass "\"A\""
+config *.SW_A.phy[*].shaper.transmissionSelectionAlgorithm[7].staticIdleSlope 10Mbps
+config *.SW_A.phy[*].shaper.transmissionSelectionAlgorithm[6].typename CreditBasedShaper
+config *.SW_A.phy[*].shaper.transmissionSelectionAlgorithm[6].srClass "\"B\""
+config *.SW_A.phy[*].shaper.transmissionSelectionAlgorithm[6].staticIdleSlope 5Mbps
+config *.SW_A.phy[*].shaper.gateControlList.controlList "\"o,o,o,o,o,o,o,o:0\""
+config *.SW_A.phy[*].untaggedVID 0
+config *.SW_A.phy[*].taggedVIDs "\"0,1\""
+config *.SW_B.phy[*].shaper.transmissionSelectionAlgorithm[7].typename CreditBasedShaper
+config *.SW_B.phy[*].shaper.transmissionSelectionAlgorithm[7].srClass "\"A\""
+config *.SW_B.phy[*].shaper.transmissionSelectionAlgorithm[7].staticIdleSlope 10Mbps
+config *.SW_B.phy[*].shaper.transmissionSelectionAlgorithm[6].typename CreditBasedShaper
+config *.SW_B.phy[*].shaper.transmissionSelectionAlgorithm[6].srClass "\"B\""
+config *.SW_B.phy[*].shaper.transmissionSelectionAlgorithm[6].staticIdleSlope 5Mbps
+config *.SW_B.phy[*].shaper.gateControlList.controlList "\"o,o,o,o,o,o,o,o:0\""
+config *.SW_B.phy[*].untaggedVID 0
+config *.SW_B.phy[*].taggedVIDs "\"0,1\""
+config *.SW_C.phy[*].shaper.transmissionSelectionAlgorithm[7].typename CreditBasedShaper
+config *.SW_C.phy[*].shaper.transmissionSelectionAlgorithm[7].srClass "\"A\""
+config *.SW_C.phy[*].shaper.transmissionSelectionAlgorithm[7].staticIdleSlope 10Mbps
+config *.SW_C.phy[*].shaper.transmissionSelectionAlgorithm[6].typename CreditBasedShaper
+config *.SW_C.phy[*].shaper.transmissionSelectionAlgorithm[6].srClass "\"B\""
+config *.SW_C.phy[*].shaper.transmissionSelectionAlgorithm[6].staticIdleSlope 5Mbps
+config *.SW_C.phy[*].shaper.gateControlList.controlList "\"o,o,o,o,o,o,o,o:0\""
+config *.SW_C.phy[*].untaggedVID 0
+config *.SW_C.phy[*].taggedVIDs "\"0,1\""
+config *.SW_D.phy[*].shaper.transmissionSelectionAlgorithm[7].typename CreditBasedShaper
+config *.SW_D.phy[*].shaper.transmissionSelectionAlgorithm[7].srClass "\"A\""
+config *.SW_D.phy[*].shaper.transmissionSelectionAlgorithm[7].staticIdleSlope 10Mbps
+config *.SW_D.phy[*].shaper.transmissionSelectionAlgorithm[6].typename CreditBasedShaper
+config *.SW_D.phy[*].shaper.transmissionSelectionAlgorithm[6].srClass "\"B\""
+config *.SW_D.phy[*].shaper.transmissionSelectionAlgorithm[6].staticIdleSlope 5Mbps
+config *.SW_D.phy[*].shaper.gateControlList.controlList "\"o,o,o,o,o,o,o,o:0\""
+config *.SW_D.phy[*].untaggedVID 0
+config *.SW_D.phy[*].taggedVIDs "\"0,1\""
+config **.txQueue.queueLength.result-recording-modes mean,max,vector
+config **.txQueue.queuingDelay.result-recording-modes mean,max,vector
+config **.busLoad.result-recording-modes mean,timeavg
+config **.canInputQueueLength.result-recording-modes mean,max,vector
+config **.canFdInputQueueLength.result-recording-modes mean,max,vector
+config **.linInputQueueLength.result-recording-modes mean,max,vector
+config **.canQueuingDelay.result-recording-modes mean,max,vector
+config **.canFdQueuingDelay.result-recording-modes mean,max,vector
+config **.linQueuingDelay.result-recording-modes mean,max,vector
+config **.inputDropCount.result-recording-modes last,vector
+config **.processingDelay.result-recording-modes mean,vector
+config **.uplinkUtil.result-recording-modes mean,timeavg
+config **.port[*].queueLength.result-recording-modes mean,max
+config **.port[*].queuingDelay.result-recording-modes mean,max
+config **.port[*].dropCount.result-recording-modes last
+config **.credit.result-recording-modes vector
+config **.reservedBandwidth.result-recording-modes vector
+config **.sinkApp[*].rxDFLatency.result-recording-modes mean,max,vector
+config **.canNodePort.canPortInput.rxDFLatency.result-recording-modes mean,max,vector
+config output-scalar-file results/General-0.sca
+config output-vector-file results/General-0.vec
+
+vector 0 RingTopology.SW_A.phy[0].shaper.transmissionSelectionAlgorithm[6] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 1 RingTopology.SW_A.phy[0].shaper.transmissionSelectionAlgorithm[7] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 2 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp0Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 3 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp0Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 4 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp1Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 5 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp1Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 6 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp2Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 7 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp2Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 8 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp3Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 9 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp3Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 10 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp4Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 11 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp4Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 12 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp5Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 13 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp5Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 14 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp6Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 15 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp6Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 16 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp7Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 17 RingTopology.SW_A.phy[0].shaper.transmissionSelection qPcp7Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 18 RingTopology.SW_A.phy[1].shaper.transmissionSelectionAlgorithm[6] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 19 RingTopology.SW_A.phy[1].shaper.transmissionSelectionAlgorithm[7] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 20 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp0Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 21 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp0Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 22 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp1Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 23 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp1Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 24 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp2Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 25 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp2Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 26 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp3Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 27 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp3Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 28 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp4Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 29 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp4Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 30 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp5Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 31 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp5Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 32 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp6Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 33 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp6Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 34 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp7Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 35 RingTopology.SW_A.phy[1].shaper.transmissionSelection qPcp7Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 36 RingTopology.SW_A.phy[2].shaper.transmissionSelectionAlgorithm[6] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 37 RingTopology.SW_A.phy[2].shaper.transmissionSelectionAlgorithm[7] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 38 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp0Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 39 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp0Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 40 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp1Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 41 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp1Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 42 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp2Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 43 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp2Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 44 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp3Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 45 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp3Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 46 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp4Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 47 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp4Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 48 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp5Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 49 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp5Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 50 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp6Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 51 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp6Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 52 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp7Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 53 RingTopology.SW_A.phy[2].shaper.transmissionSelection qPcp7Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 54 RingTopology.SW_B.phy[0].shaper.transmissionSelectionAlgorithm[6] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 55 RingTopology.SW_B.phy[0].shaper.transmissionSelectionAlgorithm[7] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 56 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp0Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 57 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp0Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 58 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp1Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 59 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp1Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 60 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp2Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 61 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp2Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 62 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp3Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 63 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp3Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 64 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp4Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 65 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp4Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 66 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp5Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 67 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp5Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 68 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp6Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 69 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp6Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 70 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp7Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 71 RingTopology.SW_B.phy[0].shaper.transmissionSelection qPcp7Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 72 RingTopology.SW_B.phy[1].shaper.transmissionSelectionAlgorithm[6] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 73 RingTopology.SW_B.phy[1].shaper.transmissionSelectionAlgorithm[7] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 74 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp0Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 75 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp0Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 76 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp1Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 77 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp1Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 78 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp2Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 79 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp2Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 80 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp3Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 81 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp3Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 82 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp4Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 83 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp4Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 84 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp5Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 85 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp5Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 86 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp6Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 87 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp6Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 88 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp7Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 89 RingTopology.SW_B.phy[1].shaper.transmissionSelection qPcp7Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 90 RingTopology.SW_B.phy[2].shaper.transmissionSelectionAlgorithm[6] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 91 RingTopology.SW_B.phy[2].shaper.transmissionSelectionAlgorithm[7] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 92 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp0Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 93 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp0Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 94 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp1Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 95 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp1Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 96 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp2Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 97 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp2Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 98 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp3Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 99 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp3Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 100 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp4Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 101 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp4Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 102 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp5Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 103 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp5Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 104 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp6Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 105 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp6Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 106 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp7Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 107 RingTopology.SW_B.phy[2].shaper.transmissionSelection qPcp7Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 108 RingTopology.SW_C.phy[0].shaper.transmissionSelectionAlgorithm[6] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 109 RingTopology.SW_C.phy[0].shaper.transmissionSelectionAlgorithm[7] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 110 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp0Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 111 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp0Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 112 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp1Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 113 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp1Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 114 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp2Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 115 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp2Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 116 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp3Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 117 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp3Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 118 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp4Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 119 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp4Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 120 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp5Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 121 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp5Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 122 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp6Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 123 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp6Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 124 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp7Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 125 RingTopology.SW_C.phy[0].shaper.transmissionSelection qPcp7Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 126 RingTopology.SW_C.phy[1].shaper.transmissionSelectionAlgorithm[6] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 127 RingTopology.SW_C.phy[1].shaper.transmissionSelectionAlgorithm[7] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 128 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp0Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 129 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp0Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 130 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp1Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 131 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp1Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 132 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp2Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 133 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp2Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 134 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp3Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 135 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp3Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 136 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp4Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 137 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp4Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 138 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp5Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 139 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp5Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 140 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp6Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 141 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp6Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 142 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp7Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 143 RingTopology.SW_C.phy[1].shaper.transmissionSelection qPcp7Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 144 RingTopology.SW_D.phy[0].shaper.transmissionSelectionAlgorithm[6] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 145 RingTopology.SW_D.phy[0].shaper.transmissionSelectionAlgorithm[7] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 146 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp0Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 147 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp0Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 148 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp1Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 149 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp1Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 150 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp2Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 151 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp2Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 152 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp3Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 153 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp3Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 154 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp4Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 155 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp4Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 156 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp5Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 157 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp5Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 158 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp6Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 159 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp6Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 160 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp7Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 161 RingTopology.SW_D.phy[0].shaper.transmissionSelection qPcp7Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 162 RingTopology.SW_D.phy[1].shaper.transmissionSelectionAlgorithm[6] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 163 RingTopology.SW_D.phy[1].shaper.transmissionSelectionAlgorithm[7] reservedBandwidth:vector ETV
+attr "" ""
+attr recordingmode vector
+attr source reservedBandwidth
+attr title "Reserved Bandwidth"
+attr unit bps
+vector 164 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp0Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 165 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp0Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 166 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp1Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 167 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp1Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 168 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp2Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 169 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp2Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 170 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp3Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 171 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp3Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 172 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp4Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 173 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp4Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 174 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp5Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 175 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp5Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 176 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp6Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 177 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp6Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 178 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp7Bytes:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "Received Bytes, packetBytes"
+attr unit B
+vector 179 RingTopology.SW_D.phy[1].shaper.transmissionSelection qPcp7Latency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "End-to-end latency"
+attr unit s
+vector 180 RingTopology.CAN_FD_Node_A0.canClock clockDrift:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source clockDrift
+attr title clockDrift
+attr unit s
+vector 181 RingTopology.CAN_FD_Node_A1.canClock clockDrift:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source clockDrift
+attr title clockDrift
+attr unit s
+vector 182 RingTopology.CAN_FD_Node_A2.canClock clockDrift:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source clockDrift
+attr title clockDrift
+attr unit s
+vector 183 RingTopology.CAN_FD_Node_B0.canClock clockDrift:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source clockDrift
+attr title clockDrift
+attr unit s
+vector 184 RingTopology.CAN_FD_Node_B1.canClock clockDrift:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source clockDrift
+attr title clockDrift
+attr unit s
+vector 185 RingTopology.CAN_FD_Node_B2.canClock clockDrift:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source clockDrift
+attr title clockDrift
+attr unit s
+vector 186 RingTopology.CAN_Std_Node_0.canClock clockDrift:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source clockDrift
+attr title clockDrift
+attr unit s
+vector 187 RingTopology.CAN_Std_Node_1.canClock clockDrift:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source clockDrift
+attr title clockDrift
+attr unit s
+vector 188 RingTopology.CAN_Std_Node_2.canClock clockDrift:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source clockDrift
+attr title clockDrift
+attr unit s
+vector 189 RingTopology.SW_A.phy[0].shaper.transmissionSelectionAlgorithm[6] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 190 RingTopology.SW_A.phy[0].shaper.transmissionSelectionAlgorithm[7] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 191 RingTopology.SW_A.phy[1].shaper.transmissionSelectionAlgorithm[6] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 192 RingTopology.SW_A.phy[1].shaper.transmissionSelectionAlgorithm[7] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 193 RingTopology.SW_A.phy[2].shaper.transmissionSelectionAlgorithm[6] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 194 RingTopology.SW_A.phy[2].shaper.transmissionSelectionAlgorithm[7] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 195 RingTopology.SW_B.phy[0].shaper.transmissionSelectionAlgorithm[6] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 196 RingTopology.SW_B.phy[0].shaper.transmissionSelectionAlgorithm[7] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 197 RingTopology.SW_B.phy[1].shaper.transmissionSelectionAlgorithm[6] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 198 RingTopology.SW_B.phy[1].shaper.transmissionSelectionAlgorithm[7] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 199 RingTopology.SW_B.phy[2].shaper.transmissionSelectionAlgorithm[6] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 200 RingTopology.SW_B.phy[2].shaper.transmissionSelectionAlgorithm[7] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 201 RingTopology.SW_C.phy[0].shaper.transmissionSelectionAlgorithm[6] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 202 RingTopology.SW_C.phy[0].shaper.transmissionSelectionAlgorithm[7] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 203 RingTopology.SW_C.phy[1].shaper.transmissionSelectionAlgorithm[6] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 204 RingTopology.SW_C.phy[1].shaper.transmissionSelectionAlgorithm[7] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 205 RingTopology.SW_D.phy[0].shaper.transmissionSelectionAlgorithm[6] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 206 RingTopology.SW_D.phy[0].shaper.transmissionSelectionAlgorithm[7] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 207 RingTopology.SW_D.phy[1].shaper.transmissionSelectionAlgorithm[6] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 208 RingTopology.SW_D.phy[1].shaper.transmissionSelectionAlgorithm[7] credit:vector ETV
+attr "" ""
+attr interpolationmode linear
+attr recordingmode vector
+attr source credit
+attr title Credit
+attr unit b
+vector 209 RingTopology.SW_A.scheduler.oscillator currentDrift:vector ETV
+attr recordingmode vector
+attr title "Current drift"
+attr unit s
+vector 210 RingTopology.SW_A.scheduler.timer clockCorrection:vector ETV
+attr recordingmode vector
+attr title "Clock correction"
+attr unit tick
+vector 211 RingTopology.SW_B.scheduler.oscillator currentDrift:vector ETV
+attr recordingmode vector
+attr title "Current drift"
+attr unit s
+vector 212 RingTopology.SW_B.scheduler.timer clockCorrection:vector ETV
+attr recordingmode vector
+attr title "Clock correction"
+attr unit tick
+vector 213 RingTopology.SW_C.scheduler.oscillator currentDrift:vector ETV
+attr recordingmode vector
+attr title "Current drift"
+attr unit s
+vector 214 RingTopology.SW_C.scheduler.timer clockCorrection:vector ETV
+attr recordingmode vector
+attr title "Clock correction"
+attr unit tick
+vector 215 RingTopology.SW_D.scheduler.oscillator currentDrift:vector ETV
+attr recordingmode vector
+attr title "Current drift"
+attr unit s
+vector 216 RingTopology.SW_D.scheduler.timer clockCorrection:vector ETV
+attr recordingmode vector
+attr title "Clock correction"
+attr unit tick
+vector 217 RingTopology.CAN_FD_Node_A0.bufferOut rxPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPk
+attr title "RX Packets, packetBytes"
+vector 218 RingTopology.CAN_FD_Node_A0.bufferOut length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 219 RingTopology.CAN_FD_Node_A0.bufferOut size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 220 RingTopology.CAN_FD_Bus_A.canBusLogic arbitrationLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source arbitrationLength
+attr title "Arbitration Length"
+attr unit packets
+vector 221 RingTopology.CAN_FD_Node_B0.bufferOut rxPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPk
+attr title "RX Packets, packetBytes"
+vector 222 RingTopology.CAN_FD_Node_B0.bufferOut length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 223 RingTopology.CAN_FD_Node_B0.bufferOut size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 224 RingTopology.CAN_FD_Bus_B.canBusLogic arbitrationLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source arbitrationLength
+attr title "Arbitration Length"
+attr unit packets
+vector 225 RingTopology.CAN_Std_Node_0.bufferOut rxPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPk
+attr title "RX Packets, packetBytes"
+vector 226 RingTopology.CAN_Std_Node_0.bufferOut length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 227 RingTopology.CAN_Std_Node_0.bufferOut size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 228 RingTopology.CAN_Std_Bus.canBusLogic arbitrationLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source arbitrationLength
+attr title "Arbitration Length"
+attr unit packets
+vector 229 RingTopology.CAN_FD_Node_A0.bufferOut txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "TX Packets, packetBytes"
+vector 230 RingTopology.CAN_FD_Node_B0.bufferOut txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "TX Packets, packetBytes"
+vector 231 RingTopology.CAN_Std_Node_0.bufferOut txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "TX Packets, packetBytes"
+vector 232 RingTopology.CAN_Std_Node_1.bufferOut rxPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPk
+attr title "RX Packets, packetBytes"
+vector 233 RingTopology.CAN_Std_Node_1.bufferOut length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 234 RingTopology.CAN_Std_Node_1.bufferOut size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 235 RingTopology.CAN_Std_Node_1.bufferOut txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "TX Packets, packetBytes"
+vector 236 RingTopology.GW_C canInputQueueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source canInputQueueLength
+attr title "CAN input queue length"
+attr unit frames
+vector 237 RingTopology.GW_C processingDelay:vector ETV
+attr recordingmode vector
+attr source processingDelay
+attr title "Gateway processing delay"
+attr unit us
+vector 238 RingTopology.GW_C canQueuingDelay:vector ETV
+attr recordingmode vector
+attr source canQueuingDelay
+attr title "CAN gateway queuing delay"
+attr unit us
+vector 239 RingTopology.GW_C canE2EDelay:vector ETV
+attr recordingmode vector
+attr source canE2EDelay
+attr title "CAN e2e delay (ECU to GW Ethernet departure)"
+attr unit us
+vector 240 RingTopology.SW_C.phy[1].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 241 RingTopology.SW_C.phy[1].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 242 RingTopology.SW_C.phy[1].inControl rxLatency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source messageAge(rxPk)
+attr title "End-to-end latency (received)"
+attr unit s
+vector 243 RingTopology.SW_C.phy[0].shaper.queue[0] length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 244 RingTopology.SW_C.phy[0].shaper.queue[0] size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 245 RingTopology.SW_C.phy[0].shaper.queue[0] state:vector ETV
+attr "" ""
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source NF_QBV_STATE_CHANGED
+attr title State
+vector 246 RingTopology.SW_C.phy[0].shaper.queue[0] delay:vector ETV
+attr recordingmode vector
+attr source delay
+attr title "Queueing delay"
+attr unit s
+vector 247 RingTopology.SW_C.phy[0].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 248 RingTopology.SW_C.phy[0].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 249 RingTopology.SW_B.phy[1].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 250 RingTopology.SW_B.phy[1].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 251 RingTopology.SW_B.phy[1].inControl rxLatency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source messageAge(rxPk)
+attr title "End-to-end latency (received)"
+attr unit s
+vector 252 RingTopology.SW_B.phy[0].shaper.queue[0] length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 253 RingTopology.SW_B.phy[0].shaper.queue[0] size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 254 RingTopology.SW_B.phy[0].shaper.queue[0] state:vector ETV
+attr "" ""
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source NF_QBV_STATE_CHANGED
+attr title State
+vector 255 RingTopology.SW_B.phy[2].shaper.queue[0] length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 256 RingTopology.SW_B.phy[2].shaper.queue[0] size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 257 RingTopology.SW_B.phy[2].shaper.queue[0] state:vector ETV
+attr "" ""
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source NF_QBV_STATE_CHANGED
+attr title State
+vector 258 RingTopology.SW_B.phy[0].shaper.queue[0] delay:vector ETV
+attr recordingmode vector
+attr source delay
+attr title "Queueing delay"
+attr unit s
+vector 259 RingTopology.SW_B.phy[2].shaper.queue[0] delay:vector ETV
+attr recordingmode vector
+attr source delay
+attr title "Queueing delay"
+attr unit s
+vector 260 RingTopology.SW_B.phy[0].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 261 RingTopology.SW_B.phy[2].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 262 RingTopology.SW_B.phy[0].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 263 RingTopology.SW_A.phy[0].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 264 RingTopology.SW_A.phy[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 265 RingTopology.SW_A.phy[0].inControl rxLatency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source messageAge(rxPk)
+attr title "End-to-end latency (received)"
+attr unit s
+vector 266 RingTopology.SW_B.phy[2].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 267 RingTopology.GW_B ethE2EDelay:vector ETV
+attr recordingmode vector
+attr source ethE2EDelay
+attr title "ETH e2e delay (node send to GW receive)"
+attr unit us
+vector 268 RingTopology.SW_A.phy[1].shaper.queue[0] length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 269 RingTopology.SW_A.phy[1].shaper.queue[0] size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 270 RingTopology.SW_A.phy[1].shaper.queue[0] state:vector ETV
+attr "" ""
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source NF_QBV_STATE_CHANGED
+attr title State
+vector 271 RingTopology.SW_A.phy[2].shaper.queue[0] length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 272 RingTopology.SW_A.phy[2].shaper.queue[0] size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 273 RingTopology.SW_A.phy[2].shaper.queue[0] state:vector ETV
+attr "" ""
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source NF_QBV_STATE_CHANGED
+attr title State
+vector 274 RingTopology.SW_A.phy[1].shaper.queue[0] delay:vector ETV
+attr recordingmode vector
+attr source delay
+attr title "Queueing delay"
+attr unit s
+vector 275 RingTopology.SW_A.phy[2].shaper.queue[0] delay:vector ETV
+attr recordingmode vector
+attr source delay
+attr title "Queueing delay"
+attr unit s
+vector 276 RingTopology.SW_A.phy[1].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 277 RingTopology.SW_A.phy[2].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 278 RingTopology.SW_A.phy[1].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 279 RingTopology.SW_D.phy[0].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 280 RingTopology.SW_D.phy[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 281 RingTopology.SW_D.phy[0].inControl rxLatency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source messageAge(rxPk)
+attr title "End-to-end latency (received)"
+attr unit s
+vector 282 RingTopology.SW_A.phy[2].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 283 RingTopology.GW_A ethE2EDelay:vector ETV
+attr recordingmode vector
+attr source ethE2EDelay
+attr title "ETH e2e delay (node send to GW receive)"
+attr unit us
+vector 284 RingTopology.SW_D.phy[1].shaper.queue[0] length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 285 RingTopology.SW_D.phy[1].shaper.queue[0] size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 286 RingTopology.SW_D.phy[1].shaper.queue[0] state:vector ETV
+attr "" ""
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source NF_QBV_STATE_CHANGED
+attr title State
+vector 287 RingTopology.SW_D.phy[1].shaper.queue[0] delay:vector ETV
+attr recordingmode vector
+attr source delay
+attr title "Queueing delay"
+attr unit s
+vector 288 RingTopology.SW_D.phy[1].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 289 RingTopology.SW_D.phy[1].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 290 RingTopology.GW_D ethE2EDelay:vector ETV
+attr recordingmode vector
+attr source ethE2EDelay
+attr title "ETH e2e delay (node send to GW receive)"
+attr unit us
+vector 291 RingTopology.CAN_FD_Node_A1.bufferOut rxPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPk
+attr title "RX Packets, packetBytes"
+vector 292 RingTopology.CAN_FD_Node_A1.bufferOut length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 293 RingTopology.CAN_FD_Node_A1.bufferOut size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 294 RingTopology.CAN_FD_Node_B1.bufferOut rxPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPk
+attr title "RX Packets, packetBytes"
+vector 295 RingTopology.CAN_FD_Node_B1.bufferOut length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 296 RingTopology.CAN_FD_Node_B1.bufferOut size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 297 RingTopology.CAN_Std_Node_2.bufferOut rxPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPk
+attr title "RX Packets, packetBytes"
+vector 298 RingTopology.CAN_Std_Node_2.bufferOut length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 299 RingTopology.CAN_Std_Node_2.bufferOut size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 300 RingTopology.CAN_FD_Node_A1.bufferOut txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "TX Packets, packetBytes"
+vector 301 RingTopology.CAN_FD_Node_B1.bufferOut txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "TX Packets, packetBytes"
+vector 302 RingTopology.CAN_Std_Node_2.bufferOut txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "TX Packets, packetBytes"
+vector 303 RingTopology.CAN_FD_Node_A2.bufferOut rxPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPk
+attr title "RX Packets, packetBytes"
+vector 304 RingTopology.CAN_FD_Node_A2.bufferOut length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 305 RingTopology.CAN_FD_Node_A2.bufferOut size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 306 RingTopology.CAN_FD_Node_B2.bufferOut rxPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPk
+attr title "RX Packets, packetBytes"
+vector 307 RingTopology.CAN_FD_Node_B2.bufferOut length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 308 RingTopology.CAN_FD_Node_B2.bufferOut size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 309 RingTopology.CAN_FD_Node_A2.bufferOut txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "TX Packets, packetBytes"
+vector 310 RingTopology.CAN_FD_Node_B2.bufferOut txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "TX Packets, packetBytes"
+vector 311 RingTopology.GW_D linInputQueueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source linInputQueueLength
+attr title "LIN input queue length"
+attr unit frames
+vector 312 RingTopology.GW_D processingDelay:vector ETV
+attr recordingmode vector
+attr source processingDelay
+attr title "Gateway processing delay"
+attr unit us
+vector 313 RingTopology.GW_D linQueuingDelay:vector ETV
+attr recordingmode vector
+attr source linQueuingDelay
+attr title "LIN gateway queuing delay"
+attr unit us
+vector 314 RingTopology.GW_D linE2EDelay:vector ETV
+attr recordingmode vector
+attr source linE2EDelay
+attr title "LIN e2e delay (ECU to GW Ethernet departure)"
+attr unit us
+vector 315 RingTopology.SW_D.phy[1].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 316 RingTopology.SW_D.phy[1].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 317 RingTopology.SW_D.phy[1].inControl rxLatency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source messageAge(rxPk)
+attr title "End-to-end latency (received)"
+attr unit s
+vector 318 RingTopology.SW_D.phy[0].shaper.queue[0] length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 319 RingTopology.SW_D.phy[0].shaper.queue[0] size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 320 RingTopology.SW_D.phy[0].shaper.queue[0] state:vector ETV
+attr "" ""
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source NF_QBV_STATE_CHANGED
+attr title State
+vector 321 RingTopology.SW_D.phy[0].shaper.queue[0] delay:vector ETV
+attr recordingmode vector
+attr source delay
+attr title "Queueing delay"
+attr unit s
+vector 322 RingTopology.SW_D.phy[0].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 323 RingTopology.SW_D.phy[0].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 324 RingTopology.SW_A.phy[1].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 325 RingTopology.SW_A.phy[1].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 326 RingTopology.SW_A.phy[1].inControl rxLatency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source messageAge(rxPk)
+attr title "End-to-end latency (received)"
+attr unit s
+vector 327 RingTopology.SW_A.phy[0].shaper.queue[0] length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 328 RingTopology.SW_A.phy[0].shaper.queue[0] size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 329 RingTopology.SW_A.phy[0].shaper.queue[0] state:vector ETV
+attr "" ""
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source NF_QBV_STATE_CHANGED
+attr title State
+vector 330 RingTopology.SW_A.phy[0].shaper.queue[0] delay:vector ETV
+attr recordingmode vector
+attr source delay
+attr title "Queueing delay"
+attr unit s
+vector 331 RingTopology.SW_A.phy[0].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 332 RingTopology.SW_A.phy[0].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 333 RingTopology.SW_B.phy[0].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 334 RingTopology.SW_B.phy[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 335 RingTopology.SW_B.phy[0].inControl rxLatency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source messageAge(rxPk)
+attr title "End-to-end latency (received)"
+attr unit s
+vector 336 RingTopology.SW_B.phy[1].shaper.queue[0] length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 337 RingTopology.SW_B.phy[1].shaper.queue[0] size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 338 RingTopology.SW_B.phy[1].shaper.queue[0] state:vector ETV
+attr "" ""
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source NF_QBV_STATE_CHANGED
+attr title State
+vector 339 RingTopology.SW_B.phy[1].shaper.queue[0] delay:vector ETV
+attr recordingmode vector
+attr source delay
+attr title "Queueing delay"
+attr unit s
+vector 340 RingTopology.SW_B.phy[1].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 341 RingTopology.SW_B.phy[1].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 342 RingTopology.SW_C.phy[0].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 343 RingTopology.SW_C.phy[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 344 RingTopology.SW_C.phy[0].inControl rxLatency:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source messageAge(rxPk)
+attr title "End-to-end latency (received)"
+attr unit s
+vector 345 RingTopology.SW_C.phy[1].shaper.queue[0] length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 346 RingTopology.SW_C.phy[1].shaper.queue[0] size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 347 RingTopology.SW_C.phy[1].shaper.queue[0] state:vector ETV
+attr "" ""
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source NF_QBV_STATE_CHANGED
+attr title State
+vector 348 RingTopology.SW_C.phy[1].shaper.queue[0] delay:vector ETV
+attr recordingmode vector
+attr source delay
+attr title "Queueing delay"
+attr unit s
+vector 349 RingTopology.SW_C.phy[1].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 350 RingTopology.SW_C.phy[1].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 351 RingTopology.GW_C ethE2EDelay:vector ETV
+attr recordingmode vector
+attr source ethE2EDelay
+attr title "ETH e2e delay (node send to GW receive)"
+attr unit us
+0	80525 28 0 0 0 0 2 5000000 5000000 10000000 50000000000000
+1	80553 30 0 0 0 0 2 10000000 10000000 20000000 2e+14
+2	80583 13118 0 807343 0 7.314043770667 489 0 64 31232 1998848
+3	93701 17510 0 807343 0 7.314043770667 489 0 0.000119596 0.058362848 6.979963169408e-06
+4	111211 8 0 0 0 0 1 0 0 0 0
+5	111219 8 0 0 0 0 1 0 0 0 0
+6	111227 8 0 0 0 0 1 0 0 0 0
+7	111235 8 0 0 0 0 1 0 0 0 0
+8	111243 8 0 0 0 0 1 0 0 0 0
+9	111251 8 0 0 0 0 1 0 0 0 0
+10	111259 9 0 0 0 0 1 0 0 0 0
+11	111268 9 0 0 0 0 1 0 0 0 0
+12	111277 9 0 0 0 0 1 0 0 0 0
+13	111286 9 0 0 0 0 1 0 0 0 0
+14	111295 9 0 0 0 0 1 0 0 0 0
+15	111304 9 0 0 0 0 1 0 0 0 0
+16	111313 9 0 0 0 0 1 0 0 0 0
+17	111322 9 0 0 0 0 1 0 0 0 0
+18	111331 30 0 0 0 0 2 5000000 5000000 10000000 50000000000000
+19	111361 32 0 0 0 0 2 10000000 10000000 20000000 2e+14
+20	111393 42495 0 807257 0 7.313880372 1710 0 64 109376 7000064
+21	153888 57876 0 807257 0 7.313880372 1710 0 0.000128372 0.21938774799999 2.8163243986256e-05
+22	211764 9 0 0 0 0 1 0 0 0 0
+23	211773 9 0 0 0 0 1 0 0 0 0
+24	211782 9 0 0 0 0 1 0 0 0 0
+25	211791 9 0 0 0 0 1 0 0 0 0
+26	211800 9 0 0 0 0 1 0 0 0 0
+27	211809 9 0 0 0 0 1 0 0 0 0
+28	211818 9 0 0 0 0 1 0 0 0 0
+29	211827 9 0 0 0 0 1 0 0 0 0
+30	211836 9 0 0 0 0 1 0 0 0 0
+31	211845 9 0 0 0 0 1 0 0 0 0
+32	211854 9 0 0 0 0 1 0 0 0 0
+33	211863 9 0 0 0 0 1 0 0 0 0
+34	211872 9 0 0 0 0 1 0 0 0 0
+35	211881 9 0 0 0 0 1 0 0 0 0
+36	211890 30 0 0 0 0 2 5000000 5000000 10000000 50000000000000
+37	211920 32 0 0 0 0 2 10000000 10000000 20000000 2e+14
+38	211952 56093 0 807344 0 7.314043770667 2198 0 64 140608 8998912
+39	268045 75866 0 807344 0 7.314043770667 2198 0 0.000128372 0.27775059599999 3.5143207155663e-05
+40	343911 9 0 0 0 0 1 0 0 0 0
+41	343920 9 0 0 0 0 1 0 0 0 0
+42	343929 9 0 0 0 0 1 0 0 0 0
+43	343938 9 0 0 0 0 1 0 0 0 0
+44	343947 9 0 0 0 0 1 0 0 0 0
+45	343956 9 0 0 0 0 1 0 0 0 0
+46	343965 9 0 0 0 0 1 0 0 0 0
+47	343974 9 0 0 0 0 1 0 0 0 0
+48	343983 9 0 0 0 0 1 0 0 0 0
+49	343992 9 0 0 0 0 1 0 0 0 0
+50	344001 9 0 0 0 0 1 0 0 0 0
+51	344010 9 0 0 0 0 1 0 0 0 0
+52	344019 9 0 0 0 0 1 0 0 0 0
+53	344028 9 0 0 0 0 1 0 0 0 0
+54	344037 30 0 0 0 0 2 5000000 5000000 10000000 50000000000000
+55	344067 32 0 0 0 0 2 10000000 10000000 20000000 2e+14
+56	344099 42495 0 807238 0 7.313871596 1710 0 64 109376 7000064
+57	386594 57876 0 807238 0 7.313871596 1710 0 0.000119596 0.204389564 2.4444174296144e-05
+58	444470 9 0 0 0 0 1 0 0 0 0
+59	444479 9 0 0 0 0 1 0 0 0 0
+60	444488 9 0 0 0 0 1 0 0 0 0
+61	444497 9 0 0 0 0 1 0 0 0 0
+62	444506 9 0 0 0 0 1 0 0 0 0
+63	444515 9 0 0 0 0 1 0 0 0 0
+64	444524 9 0 0 0 0 1 0 0 0 0
+65	444533 9 0 0 0 0 1 0 0 0 0
+66	444542 9 0 0 0 0 1 0 0 0 0
+67	444551 9 0 0 0 0 1 0 0 0 0
+68	444560 9 0 0 0 0 1 0 0 0 0
+69	444569 9 0 0 0 0 1 0 0 0 0
+70	444578 9 0 0 0 0 1 0 0 0 0
+71	444587 9 0 0 0 0 1 0 0 0 0
+72	444596 30 0 0 0 0 2 5000000 5000000 10000000 50000000000000
+73	444626 32 0 0 0 0 2 10000000 10000000 20000000 2e+14
+74	444658 13607 0 807362 0 7.314052546667 489 0 64 31232 1998848
+75	458265 17999 0 807362 0 7.314052546667 489 0 0.000128372 0.062645536000001 8.041932747392e-06
+76	476264 9 0 0 0 0 1 0 0 0 0
+77	476273 9 0 0 0 0 1 0 0 0 0
+78	476282 9 0 0 0 0 1 0 0 0 0
+79	476291 9 0 0 0 0 1 0 0 0 0
+80	476300 9 0 0 0 0 1 0 0 0 0
+81	476309 9 0 0 0 0 1 0 0 0 0
+82	476318 9 0 0 0 0 1 0 0 0 0
+83	476327 9 0 0 0 0 1 0 0 0 0
+84	476336 9 0 0 0 0 1 0 0 0 0
+85	476345 9 0 0 0 0 1 0 0 0 0
+86	476354 9 0 0 0 0 1 0 0 0 0
+87	476363 9 0 0 0 0 1 0 0 0 0
+88	476372 9 0 0 0 0 1 0 0 0 0
+89	476381 9 0 0 0 0 1 0 0 0 0
+90	476390 30 0 0 0 0 2 5000000 5000000 10000000 50000000000000
+91	476420 32 0 0 0 0 2 10000000 10000000 20000000 2e+14
+92	476452 56093 0 807363 0 7.314052546667 2198 0 64 140608 8998912
+93	532545 75866 0 807363 0 7.314052546667 2198 0 0.000128372 0.2670351 3.2486107043536e-05
+94	608411 9 0 0 0 0 1 0 0 0 0
+95	608420 9 0 0 0 0 1 0 0 0 0
+96	608429 9 0 0 0 0 1 0 0 0 0
+97	608438 9 0 0 0 0 1 0 0 0 0
+98	608447 9 0 0 0 0 1 0 0 0 0
+99	608456 9 0 0 0 0 1 0 0 0 0
+100	608465 10 0 0 0 0 1 0 0 0 0
+101	608475 10 0 0 0 0 1 0 0 0 0
+102	608485 10 0 0 0 0 1 0 0 0 0
+103	608495 10 0 0 0 0 1 0 0 0 0
+104	608505 10 0 0 0 0 1 0 0 0 0
+105	608515 10 0 0 0 0 1 0 0 0 0
+106	608525 10 0 0 0 0 1 0 0 0 0
+107	608535 10 0 0 0 0 1 0 0 0 0
+108	608545 32 0 0 0 0 2 5000000 5000000 10000000 50000000000000
+109	608577 34 0 0 0 0 2 10000000 10000000 20000000 2e+14
+110	608611 42496 0 807224 0 7.31386282 1710 0 64 109376 7000064
+111	651107 56168 0 807224 0 7.31386282 1710 0 0.00011082 0.18939138 2.09883527316e-05
+112	707275 10 0 0 0 0 1 0 0 0 0
+113	707285 10 0 0 0 0 1 0 0 0 0
+114	707295 10 0 0 0 0 1 0 0 0 0
+115	707305 10 0 0 0 0 1 0 0 0 0
+116	707315 10 0 0 0 0 1 0 0 0 0
+117	707325 10 0 0 0 0 1 0 0 0 0
+118	707335 10 0 0 0 0 1 0 0 0 0
+119	707345 10 0 0 0 0 1 0 0 0 0
+120	707355 10 0 0 0 0 1 0 0 0 0
+121	707365 10 0 0 0 0 1 0 0 0 0
+122	707375 10 0 0 0 0 1 0 0 0 0
+123	707385 10 0 0 0 0 1 0 0 0 0
+124	707395 10 0 0 0 0 1 0 0 0 0
+125	707405 10 0 0 0 0 1 0 0 0 0
+126	707415 32 0 0 0 0 2 5000000 5000000 10000000 50000000000000
+127	707447 34 0 0 0 0 2 10000000 10000000 20000000 2e+14
+128	707481 14096 0 807382 0 7.314061322667 489 0 64 31232 1998848
+129	721577 18488 0 807382 0 7.314061322667 489 0 0.000137148 0.066928223999999 9.179072065152e-06
+130	740065 10 0 0 0 0 1 0 0 0 0
+131	740075 10 0 0 0 0 1 0 0 0 0
+132	740085 10 0 0 0 0 1 0 0 0 0
+133	740095 10 0 0 0 0 1 0 0 0 0
+134	740105 10 0 0 0 0 1 0 0 0 0
+135	740115 10 0 0 0 0 1 0 0 0 0
+136	740125 10 0 0 0 0 1 0 0 0 0
+137	740135 10 0 0 0 0 1 0 0 0 0
+138	740145 10 0 0 0 0 1 0 0 0 0
+139	740155 10 0 0 0 0 1 0 0 0 0
+140	740165 10 0 0 0 0 1 0 0 0 0
+141	740175 10 0 0 0 0 1 0 0 0 0
+142	740185 10 0 0 0 0 1 0 0 0 0
+143	740195 10 0 0 0 0 1 0 0 0 0
+144	740205 32 0 0 0 0 2 5000000 5000000 10000000 50000000000000
+145	740237 34 0 0 0 0 2 10000000 10000000 20000000 2e+14
+146	740271 14096 0 807329 0 7.314034994667 489 0 64 31232 1998848
+147	754367 18000 0 807329 0 7.314034994667 489 0 0.00011082 0.05408016 5.9931633312e-06
+148	772367 10 0 0 0 0 1 0 0 0 0
+149	772377 10 0 0 0 0 1 0 0 0 0
+150	772387 10 0 0 0 0 1 0 0 0 0
+151	772397 10 0 0 0 0 1 0 0 0 0
+152	772407 10 0 0 0 0 1 0 0 0 0
+153	772417 10 0 0 0 0 1 0 0 0 0
+154	772427 10 0 0 0 0 1 0 0 0 0
+155	772437 10 0 0 0 0 1 0 0 0 0
+156	772447 10 0 0 0 0 1 0 0 0 0
+157	772457 10 0 0 0 0 1 0 0 0 0
+158	772467 10 0 0 0 0 1 0 0 0 0
+159	772477 10 0 0 0 0 1 0 0 0 0
+160	772487 10 0 0 0 0 1 0 0 0 0
+161	772497 10 0 0 0 0 1 0 0 0 0
+162	772507 32 0 0 0 0 2 5000000 5000000 10000000 50000000000000
+163	772539 34 0 0 0 0 2 10000000 10000000 20000000 2e+14
+164	772573 44205 0 807273 0 7.313889148 1710 0 64 109376 7000064
+165	816778 59586 0 807273 0 7.313889148 1710 0 0.000137148 0.234385932 3.2145561801937e-05
+166	876364 10 0 0 0 0 1 0 0 0 0
+167	876374 10 0 0 0 0 1 0 0 0 0
+168	876384 10 0 0 0 0 1 0 0 0 0
+169	876394 10 0 0 0 0 1 0 0 0 0
+170	876404 10 0 0 0 0 1 0 0 0 0
+171	876414 10 0 0 0 0 1 0 0 0 0
+172	876424 10 0 0 0 0 1 0 0 0 0
+173	876434 10 0 0 0 0 1 0 0 0 0
+174	876444 10 0 0 0 0 1 0 0 0 0
+175	876454 10 0 0 0 0 1 0 0 0 0
+176	876464 10 0 0 0 0 1 0 0 0 0
+177	876474 10 0 0 0 0 1 0 0 0 0
+178	876484 10 0 0 0 0 1 0 0 0 0
+179	876494 10 0 0 0 0 1 0 0 0 0
+180	876504 69036 0 807613 0 7.317 3661 0 0 0 0
+181	945540 68203 0 807540 0 7.316 3660 0 0 0 0
+182	1013743 69021 0 807611 0 7.317 3660 0 0 0 0
+183	1082764 69036 0 807614 0 7.317 3661 0 0 0 0
+184	1151800 68203 0 807541 0 7.316 3660 0 0 0 0
+185	1220003 69021 0 807612 0 7.317 3660 0 0 0 0
+186	1289024 69037 0 807615 0 7.317 3661 0 0 0 0
+187	1358061 72677 0 807520 0 7.3155 3660 0 0 0 0
+188	1430738 68203 0 807542 0 7.316 3660 0 0 0 0
+189	1498941 13608 0 807348 0 7.314044442667 489 0 0 0 0
+190	1512549 13608 0 807348 0 7.314044442667 489 0 0 0 0
+191	1526157 42496 0 807262 0 7.313881044 1710 0 0 0 0
+192	1568653 42496 0 807262 0 7.313881044 1710 0 0 0 0
+193	1611149 56094 0 807355 0 7.314050490667 2198 0 0 0 0
+194	1667243 56094 0 807355 0 7.314050490667 2198 0 0 0 0
+195	1723337 42496 0 807243 0 7.313872268 1710 0 0 0 0
+196	1765833 42496 0 807243 0 7.313872268 1710 0 0 0 0
+197	1808329 13608 0 807367 0 7.314053218667 489 0 0 0 0
+198	1821937 13608 0 807367 0 7.314053218667 489 0 0 0 0
+199	1835545 56094 0 807374 0 7.314059266667 2198 0 0 0 0
+200	1891639 56094 0 807374 0 7.314059266667 2198 0 0 0 0
+201	1947733 42496 0 807227 0 7.313863492 1710 0 0 0 0
+202	1990229 42496 0 807227 0 7.313863492 1710 0 0 0 0
+203	2032725 13608 0 807386 0 7.314068042667 489 0 0 0 0
+204	2046333 13608 0 807386 0 7.314068042667 489 0 0 0 0
+205	2059941 13608 0 807332 0 7.314035666667 489 0 0 0 0
+206	2073549 13608 0 807332 0 7.314035666667 489 0 0 0 0
+207	2087157 42496 0 807277 0 7.313895868 1710 0 0 0 0
+208	2129653 42496 0 807277 0 7.313895868 1710 0 0 0 0
+209	2172149 240124 23 807623 0.001 7.317000166253 7317 -1.6e-11 1.6e-11 -4.423e-09 6.3980300000001e-19
+210	2412273 206382 24 807624 0.001 7.317000166253 7317 -9 9 -696 66540
+211	2618655 240878 26 807609 0.001 7.316999998217 7317 -1.6e-11 1.6e-11 -4.462e-09 7.0248400000002e-19
+212	2859533 206294 27 807610 0.001 7.316999998217 7317 -9 8 -699 68465
+213	3065827 239934 29 807627 0.001 7.317000287796 7317 -1.6e-11 1.6e-11 1.5531e-08 7.0321300000001e-19
+214	3305761 205903 30 807628 0.001 7.317000287796 7317 -9 9 2424 69064
+215	3511664 240846 32 807605 0.001 7.316999746926 7317 -1.6e-11 1.6e-11 7.91e-10 7.2289300000001e-19
+216	3752510 206262 33 807606 0.001 7.316999746926 7317 -9 9 119 68663
+217	3958772 72676 34 807618 0.001 7.317 3659 74 74 270766 20036684
+218	4031448 153868 34 807618 0.001 7.317 7317 0 1 3659 3659
+219	4185316 157527 34 807618 0.001 7.317 7317 0 74 270766 20036684
+220	4342843 206202 34 807618 0.001 7.317 10975 1 2 14633 21949
+221	4549045 72676 35 807619 0.001 7.317 3659 74 74 270766 20036684
+222	4621721 153868 35 807619 0.001 7.317 7317 0 1 3659 3659
+223	4775589 157527 35 807619 0.001 7.317 7317 0 74 270766 20036684
+224	4933116 206202 35 807619 0.001 7.317 10975 1 2 14633 21949
+225	5139318 72676 36 807620 0.001 7.317 3659 15 15 54885 823275
+226	5211994 160684 36 807620 0.001 7.317 7317 0 1 3659 3659
+227	5372678 164343 36 807620 0.001 7.317 7317 0 15 54885 823275
+228	5537021 209857 36 807620 0.001 7.317 10975 1 1 10975 10975
+229	5746878 87313 37 807629 0.0010005 7.3170005 3659 74 74 270766 20036684
+230	5834191 87313 38 807630 0.0010005 7.3170005 3659 74 74 270766 20036684
+231	5921504 83654 43 807635 0.001002 7.317002 3659 15 15 54885 823275
+232	6005158 76315 80 807521 0.0015 7.3155 3658 15 15 54870 823050
+233	6081473 156288 80 807534 0.0015 7.3157618 7316 0 1 3658 3658
+234	6237761 159946 80 807534 0.0015 7.3157618 7316 0 15 54870 823050
+235	6397707 83631 81 807522 0.001502 7.315502 3658 15 15 54870 823050
+236	6481338 74716 89 807209 0.001752 7.313752 3418 0 1 1709 1709
+237	6556054 40776 90 807209 0.001752 7.313752 1709 100 100 170900 17090000
+238	6596830 40776 90 807209 0.001752 7.313752 1709 100 100 170900 17090000
+239	6637606 61152 90 807209 0.001752 7.313752 1709 851.99999999919 852.00000000052 1456067.9999999 1240569935.9998
+240	6698758 42485 97 807217 0.00185482 7.31385482 1709 26 26 44434 1155284
+241	6741243 42485 97 807217 0.00185482 7.31385482 1709 26 26 44434 1155284
+242	6783728 56157 99 807219 0.00185482 7.31385482 1709 0.00010282 0.00010282 0.17571938 1.80674666516e-05
+243	6839885 81554 102 807223 0.00186282 7.31386282 3418 0 1 1709 1709
+244	6921439 83263 102 807223 0.00186282 7.31386282 3418 0 64 109376 7000064
+245	7004702 40777 102 807222 0.00186282 7.31386282 1709 1 1 1709 1709
+246	7045479 40777 103 807223 0.00186282 7.31386282 1709 0 0 0 0
+247	7086256 42486 105 807225 0.00186282 7.31386282 1709 64 64 109376 7000064
+248	7128742 44195 106 807226 0.001863396 7.313863396 1709 64 64 109376 7000064
+249	7172937 44195 108 807228 0.001863596 7.313863596 1709 64 64 109376 7000064
+250	7217132 44195 108 807228 0.001863596 7.313863596 1709 64 64 109376 7000064
+251	7261327 59576 110 807230 0.001863596 7.313863596 1709 0.000111596 0.000111596 0.190717564 2.1283317272143e-05
+252	7320903 84972 114 807236 0.001871596 7.313871596 3418 0 1 1709 1709
+253	7405875 86681 114 807236 0.001871596 7.313871596 3418 0 64 109376 7000064
+254	7492556 42486 114 807234 0.001871596 7.313871596 1709 1 1 1709 1709
+255	7535042 112168 115 807361 0.001871596 7.314052546667 4394 0 1 2197 2197
+256	7647210 114365 115 807361 0.001871596 7.314052546667 4394 0 64 140608 8998912
+257	7761575 56084 115 807359 0.001871596 7.314052546667 2197 1 1 2197 2197
+258	7817659 42486 116 807236 0.001871596 7.313871596 1709 0 0 0 0
+259	7860145 56084 117 807361 0.001871596 7.314052546667 2197 0 0 0 0
+260	7916229 44195 120 807240 0.001871596 7.313871596 1709 64 64 109376 7000064
+261	7960424 58281 121 807365 0.001871596 7.314052546667 2197 64 64 140608 8998912
+262	8018705 44195 122 807242 0.001872172 7.313872172 1709 64 64 109376 7000064
+263	8062900 44195 124 807244 0.001872372 7.313872372 1709 64 64 109376 7000064
+264	8107095 44195 124 807244 0.001872372 7.313872372 1709 64 64 109376 7000064
+265	8151290 59576 126 807246 0.001872372 7.313872372 1709 0.000120372 0.000120372 0.205715748 2.4762416018257e-05
+266	8210866 58281 128 807372 0.001877356 7.314058306667 2197 64 64 140608 8998912
+267	8269147 69266 129 807373 0.001877456 7.314058406667 2197 125.456 134.232 279909.52000001 35691202.516735
+268	8338413 84972 133 807255 0.001880372 7.313880372 3418 0 1 1709 1709
+269	8423385 86681 133 807255 0.001880372 7.313880372 3418 0 64 109376 7000064
+270	8510066 42486 133 807253 0.001880372 7.313880372 1709 1 1 1709 1709
+271	8552552 112168 134 807342 0.001880372 7.314043770667 4394 0 1 2197 2197
+272	8664720 114365 134 807342 0.001880372 7.314043770667 4394 0 64 140608 8998912
+273	8779085 56084 134 807340 0.001880372 7.314043770667 2197 1 1 2197 2197
+274	8835169 42486 135 807255 0.001880372 7.313880372 1709 0 0 0 0
+275	8877655 56084 136 807342 0.001880372 7.314043770667 2197 0 0 0 0
+276	8933739 44195 139 807259 0.001880372 7.313880372 1709 64 64 109376 7000064
+277	8977934 58281 140 807346 0.001880372 7.314043770667 2197 64 64 140608 8998912
+278	9036215 44195 141 807261 0.001880948 7.313880948 1709 64 64 109376 7000064
+279	9080410 44195 143 807263 0.001881148 7.313881148 1709 64 64 109376 7000064
+280	9124605 44195 143 807263 0.001881148 7.313881148 1709 64 64 109376 7000064
+281	9168800 59576 145 807265 0.001881148 7.313881148 1709 0.000129148 0.000129148 0.220713932 2.8504762889937e-05
+282	9228376 58281 147 807353 0.001886132 7.314049530667 2197 64 64 140608 8998912
+283	9286657 69266 148 807354 0.001886232 7.314049630667 2197 125.456 134.232 290625.016 38473888.241983
+284	9355923 84972 151 807272 0.001889148 7.313889148 3418 0 1 1709 1709
+285	9440895 86681 151 807272 0.001889148 7.313889148 3418 0 64 109376 7000064
+286	9527576 42486 151 807271 0.001889148 7.313889148 1709 1 1 1709 1709
+287	9570062 42486 152 807272 0.001889148 7.313889148 1709 0 0 0 0
+288	9612548 44195 154 807274 0.001889148 7.313889148 1709 64 64 109376 7000064
+289	9656743 44195 155 807275 0.001894908 7.313894908 1709 64 64 109376 7000064
+290	9700938 52740 156 807276 0.001895008 7.313895008 1709 143.008 143.008 244400.672 34951251.301375
+291	9753678 71841 181 807543 0.002 7.316 3658 74 74 270692 20031208
+292	9825519 153036 181 807589 0.002 7.3162445 7316 0 1 3658 3658
+293	9978555 156694 181 807589 0.002 7.3162445 7316 0 74 270692 20031208
+294	10135249 71841 182 807544 0.002 7.316 3658 74 74 270692 20031208
+295	10207090 153036 182 807592 0.002 7.3162445 7316 0 1 3658 3658
+296	10360126 156694 182 807592 0.002 7.3162445 7316 0 74 270692 20031208
+297	10516820 71841 183 807545 0.002 7.316 3658 15 15 54870 823050
+298	10588661 161566 183 807602 0.002 7.316385282667 7316 0 1 3658 3658
+299	10750227 165224 183 807602 0.002 7.316385282667 7316 0 15 54870 823050
+300	10915451 87291 192 807558 0.0020005 7.3160005 3658 74 74 270692 20031208
+301	11002742 87291 193 807559 0.0020005 7.3160005 3658 74 74 270692 20031208
+302	11090033 83633 198 807564 0.002002 7.316002 3658 15 15 54870 823050
+303	11173666 72660 248 807616 0.003 7.317 3658 74 74 270692 20031208
+304	11246326 153834 248 807616 0.003 7.317 7315 0 1 3658 3658
+305	11400160 157492 248 807616 0.003 7.317 7315 0 74 270692 20031208
+306	11557652 72660 249 807617 0.003 7.317 3658 74 74 270692 20031208
+307	11630312 153834 249 807617 0.003 7.317 7315 0 1 3658 3658
+308	11784146 157492 249 807617 0.003 7.317 7315 0 74 270692 20031208
+309	11941638 88513 276 807647 0.0031854 7.3171854 3658 74 74 270692 20031208
+310	12030151 85099 281 807652 0.003186 7.317186 3658 74 74 270692 20031208
+311	12115250 27194 973 807282 0.008924174667 7.313924174667 976 0 1 488 488
+312	12142444 14573 974 807282 0.008924174667 7.313924174667 488 100 100 48800 4880000
+313	12157017 14573 974 807282 0.008924174667 7.313924174667 488 100 100 48800 4880000
+314	12171590 20209 974 807282 0.008924174667 7.313924174667 488 7129.1666669993 7129.1666670006 3479033.333496 24802608474.541
+315	12191799 14086 1012 807322 0.009026994667 7.314026994667 488 26 26 12688 329888
+316	12205885 14086 1012 807322 0.009026994667 7.314026994667 488 26 26 12688 329888
+317	12219971 17990 1014 807324 0.009026994667 7.314026994667 488 0.00010282 0.00010282 0.050176160000001 5.1591127712e-06
+318	12237961 27196 1017 807328 0.009034994667 7.314034994667 976 0 1 488 488
+319	12265157 27684 1017 807328 0.009034994667 7.314034994667 976 0 64 31232 1998848
+320	12292841 13598 1017 807327 0.009034994667 7.314034994667 488 1 1 488 488
+321	12306439 13598 1018 807328 0.009034994667 7.314034994667 488 0 0 0 0
+322	12320037 14086 1020 807330 0.009034994667 7.314034994667 488 64 64 31232 1998848
+323	12334123 14086 1021 807331 0.009035570667 7.314035570667 488 64 64 31232 1998848
+324	12348209 14086 1023 807333 0.009035770667 7.314035770667 488 64 64 31232 1998848
+325	12362295 14086 1023 807333 0.009035770667 7.314035770667 488 64 64 31232 1998848
+326	12376381 18478 1025 807335 0.009035770667 7.314035770667 488 0.000111596 0.000111596 0.054458848 6.077389601408e-06
+327	12394859 27196 1029 807341 0.009043770667 7.314043770667 976 0 1 488 488
+328	12422055 27684 1029 807341 0.009043770667 7.314043770667 976 0 64 31232 1998848
+329	12449739 13598 1029 807339 0.009043770667 7.314043770667 488 1 1 488 488
+330	12463337 13598 1031 807341 0.009043770667 7.314043770667 488 0 0 0 0
+331	12476935 14086 1035 807345 0.009043770667 7.314043770667 488 64 64 31232 1998848
+332	12491021 14086 1037 807347 0.009044346667 7.314044346667 488 64 64 31232 1998848
+333	12505107 14086 1039 807349 0.009044546667 7.314044546667 488 64 64 31232 1998848
+334	12519193 14086 1039 807349 0.009044546667 7.314044546667 488 64 64 31232 1998848
+335	12533279 18478 1041 807351 0.009044546667 7.314044546667 488 0.000120372 0.000120372 0.058741536 7.0708361713919e-06
+336	12551757 27196 1048 807360 0.009052546667 7.314052546667 976 0 1 488 488
+337	12578953 27684 1048 807360 0.009052546667 7.314052546667 976 0 64 31232 1998848
+338	12606637 13598 1048 807358 0.009052546667 7.314052546667 488 1 1 488 488
+339	12620235 13598 1050 807360 0.009052546667 7.314052546667 488 0 0 0 0
+340	12633833 14086 1054 807364 0.009052546667 7.314052546667 488 64 64 31232 1998848
+341	12647919 14086 1056 807366 0.009053122667 7.314053122667 488 64 64 31232 1998848
+342	12662005 14086 1058 807368 0.009053322667 7.314053322667 488 64 64 31232 1998848
+343	12676091 14086 1058 807368 0.009053322667 7.314053322667 488 64 64 31232 1998848
+344	12690177 18478 1060 807370 0.009053322667 7.314053322667 488 0.000129148 0.000129148 0.063024224000001 8.139452481152e-06
+345	12708655 27196 1070 807381 0.009061322667 7.314061322667 976 0 1 488 488
+346	12735851 27684 1070 807381 0.009061322667 7.314061322667 976 0 64 31232 1998848
+347	12763535 13598 1070 807380 0.009061322667 7.314061322667 488 1 1 488 488
+348	12777133 13598 1071 807381 0.009061322667 7.314061322667 488 0 0 0 0
+349	12790731 14086 1073 807383 0.009061322667 7.314061322667 488 64 64 31232 1998848
+350	12804817 14086 1074 807384 0.009067082667 7.314067082667 488 64 64 31232 1998848
+351	12818903 16526 1075 807385 0.009067182667 7.314067182667 488 143.008 143.008 69787.904000001 9980228.575232
+vector 352 RingTopology.GW_A inputDropCount:vector ETV
+attr recordingmode vector
+attr source inputDropCount
+attr title "Gateway input drop count"
+vector 353 RingTopology.GW_B inputDropCount:vector ETV
+attr recordingmode vector
+attr source inputDropCount
+attr title "Gateway input drop count"
+vector 354 RingTopology.GW_C inputDropCount:vector ETV
+attr recordingmode vector
+attr source inputDropCount
+attr title "Gateway input drop count"
+vector 355 RingTopology.GW_D inputDropCount:vector ETV
+attr recordingmode vector
+attr source inputDropCount
+attr title "Gateway input drop count"
+2	12836013 4896 808945 1103632 7.329043770667 9.999043770667 179 64 64 11456 733184
+3	12840909 6507 808945 1103632 7.329043770667 9.999043770667 179 0.000119596 0.000119596 0.021407684 2.560273375664e-06
+20	12847416 15870 808299 1103477 7.323880372 9.997880372 626 64 64 40064 2564096
+21	12863286 21504 808299 1103477 7.323880372 9.997880372 626 0.000128372 0.000128372 0.080360872000001 1.0316085860384e-05
+38	12884790 20945 808300 1103633 7.323880372 9.999043770667 805 64 64 51520 3297280
+39	12905735 28190 808300 1103633 7.323880372 9.999043770667 805 0.000119596 0.000128372 0.101768556 1.2876359236048e-05
+56	12933925 15870 808280 1103458 7.323871596 9.997871596 626 64 64 40064 2564096
+57	12949795 21504 808280 1103458 7.323871596 9.997871596 626 0.000119596 0.000119596 0.074867096 8.953805213216e-06
+74	12971299 5075 808964 1103651 7.329052546667 9.999052546667 179 64 64 11456 733184
+75	12976374 6686 808964 1103651 7.329052546667 9.999052546667 179 0.000128372 0.000128372 0.022978588 2.949807298736e-06
+92	12983060 20945 808281 1103652 7.323871596 9.999052546667 805 64 64 51520 3297280
+93	13004005 28190 808281 1103652 7.323871596 9.999052546667 805 0.000119596 0.000128372 0.097845684 1.1903612511952e-05
+110	13032195 15870 808266 1103444 7.32386282 9.99786282 626 64 64 40064 2564096
+111	13048065 20878 808266 1103444 7.32386282 9.99786282 626 0.00011082 0.00011082 0.069373319999999 7.6879513224e-06
+128	13068943 5254 808984 1103671 7.329061322667 9.999061322667 179 64 64 11456 733184
+129	13074197 6865 808984 1103671 7.329061322667 9.999061322667 179 0.000137148 0.000137148 0.024549492 3.366913728816e-06
+146	13081062 5254 808931 1103618 7.329034994667 9.999034994667 179 64 64 11456 733184
+147	13086316 6686 808931 1103618 7.329034994667 9.999034994667 179 0.00011082 0.00011082 0.01983678 2.1983119596e-06
+164	13093002 16496 808315 1103493 7.323889148 9.997889148 626 64 64 40064 2564096
+165	13109498 22130 808315 1103493 7.323889148 9.997889148 626 0.000137148 0.000137148 0.085854648 1.1774793263904e-05
+180	13131628 25949 807785 1103576 7.319 9.999 1341 0 0 0 0
+181	13157577 25667 807716 1103762 7.318 10 1342 0 0 0 0
+182	13183244 25949 807783 1103574 7.319 9.999 1341 0 0 0 0
+183	13209193 25949 807786 1103577 7.319 9.999 1341 0 0 0 0
+184	13235142 25667 807717 1103763 7.318 10 1342 0 0 0 0
+185	13260809 25949 807784 1103575 7.319 9.999 1341 0 0 0 0
+186	13286758 25949 807787 1103578 7.319 9.999 1341 0 0 0 0
+187	13312707 27310 807700 1103726 7.3175 9.9995 1342 0 0 0 0
+188	13340017 25667 807718 1103764 7.318 10 1342 0 0 0 0
+189	13365684 5075 808950 1103637 7.329044442667 9.999044442667 179 0 0 0 0
+190	13370759 5075 808950 1103637 7.329044442667 9.999044442667 179 0 0 0 0
+191	13375834 15870 808304 1103482 7.323881044 9.997881044 626 0 0 0 0
+192	13391704 15870 808304 1103482 7.323881044 9.997881044 626 0 0 0 0
+193	13407574 20945 808311 1103644 7.323887092 9.999050490667 805 0 0 0 0
+194	13428519 20945 808311 1103644 7.323887092 9.999050490667 805 0 0 0 0
+195	13449464 15870 808285 1103463 7.323872268 9.997872268 626 0 0 0 0
+196	13465334 15870 808285 1103463 7.323872268 9.997872268 626 0 0 0 0
+197	13481204 5075 808969 1103656 7.329053218667 9.999053218667 179 0 0 0 0
+198	13486279 5075 808969 1103656 7.329053218667 9.999053218667 179 0 0 0 0
+199	13491354 20945 808292 1103663 7.323878316 9.999059266667 805 0 0 0 0
+200	13512299 20945 808292 1103663 7.323878316 9.999059266667 805 0 0 0 0
+201	13533244 15870 808269 1103447 7.323863492 9.997863492 626 0 0 0 0
+202	13549114 15870 808269 1103447 7.323863492 9.997863492 626 0 0 0 0
+203	13564984 5075 808988 1103675 7.329068042667 9.999068042667 179 0 0 0 0
+204	13570059 5075 808988 1103675 7.329068042667 9.999068042667 179 0 0 0 0
+205	13575134 5075 808934 1103621 7.329035666667 9.999035666667 179 0 0 0 0
+206	13580209 5075 808934 1103621 7.329035666667 9.999035666667 179 0 0 0 0
+207	13585284 15870 808319 1103497 7.323895868 9.997895868 626 0 0 0 0
+208	13601154 15870 808319 1103497 7.323895868 9.997895868 626 0 0 0 0
+209	13617024 89597 807736 1103586 7.318000296257 9.999000127831 2682 -1.6e-11 1.6e-11 1.379e-09 2.85671e-19
+210	13706621 76844 807737 1103587 7.318000296257 9.999000127831 2682 -8 8 215 25367
+211	13783465 89417 807724 1103756 7.318000038185 9.999999854611 2683 -1.6e-11 1.6e-11 -1.626e-09 2.39144e-19
+212	13872882 76970 807725 1103757 7.318000038185 9.999999854611 2683 -8 8 -258 24378
+213	13949852 89473 807728 1103590 7.318000110281 9.99900035328 2682 -1.6e-11 1.6e-11 -2.369e-09 2.43585e-19
+214	14039325 76975 807729 1103591 7.318000110281 9.99900035328 2682 -9 9 -370 23882
+215	14116300 89556 807732 1103598 7.318000256898 9.99900038077 2682 -1.6e-11 1.6e-11 2.346e-09 2.719e-19
+216	14205856 76891 807733 1103599 7.318000256898 9.99900038077 2682 -9 9 366 24954
+217	14282747 27290 807790 1103581 7.319 9.999 1341 74 74 99234 7343316
+218	14310037 57735 807660 1103693 7.3172445 9.999270530667 2683 0 1 1341 1341
+219	14367772 59076 807660 1103693 7.3172445 9.999270530667 2683 0 74 99234 7343316
+220	14426848 77565 807719 1103765 7.318 10 4024 1 2 5365 8047
+221	14504413 27290 807791 1103582 7.319 9.999 1341 74 74 99234 7343316
+222	14531703 57735 807670 1103704 7.3172452 9.999279306667 2683 0 1 1341 1341
+223	14589438 59076 807670 1103704 7.3172452 9.999279306667 2683 0 74 99234 7343316
+224	14648514 77565 807720 1103766 7.318 10 4024 1 2 5365 8047
+225	14726079 27290 807792 1103583 7.319 9.999 1341 15 15 20115 301725
+226	14753369 60239 807685 1103717 7.317385282667 9.999385282667 2683 0 1 1341 1341
+227	14813608 61580 807685 1103717 7.317385282667 9.999385282667 2683 0 15 20115 301725
+228	14875188 78926 807701 1103767 7.3175 10 4025 1 1 4025 4025
+229	14954114 32654 807809 1103600 7.3190005 9.9990005 1341 74 74 99234 7343316
+230	14986768 32654 807810 1103601 7.3190005 9.9990005 1341 74 74 99234 7343316
+231	15019422 31313 807815 1103606 7.319002 9.999002 1341 15 15 20115 301725
+232	15050735 28652 807701 1103727 7.3175 9.9995 1342 15 15 20130 301950
+233	15079387 58646 807701 1103752 7.3175 9.9997618 2684 0 1 1342 1342
+234	15138033 59988 807701 1103752 7.3175 9.9997618 2684 0 15 20130 301950
+235	15198021 31336 807702 1103728 7.317502 9.999502 1342 15 15 20130 301950
+236	15229357 27984 808251 1103430 7.323752 9.997752 1252 0 1 626 626
+237	15257341 15244 808252 1103430 7.323752 9.997752 626 100 100 62600 6260000
+238	15272585 15244 808252 1103430 7.323752 9.997752 626 100 100 62600 6260000
+239	15287829 22673 808252 1103430 7.323752 9.997752 626 851.9999999983 852.00000000007 533351.99999985 454415903.99974
+240	15310502 15870 808259 1103437 7.32385482 9.99785482 626 26 26 16276 423176
+241	15326372 15870 808259 1103437 7.32385482 9.99785482 626 26 26 16276 423176
+242	15342242 20878 808261 1103439 7.32385482 9.99785482 626 0.00010282 0.00010282 0.064365320000001 6.6180422023999e-06
+243	15363120 30488 808264 1103443 7.32386282 9.99786282 1252 0 1 626 626
+244	15393608 31114 808264 1103443 7.32386282 9.99786282 1252 0 64 40064 2564096
+245	15424722 15244 808264 1103442 7.32386282 9.99786282 626 1 1 626 626
+246	15439966 15244 808265 1103443 7.32386282 9.99786282 626 0 0 0 0
+247	15455210 15870 808267 1103445 7.32386282 9.99786282 626 64 64 40064 2564096
+248	15471080 16496 808268 1103446 7.323863396 9.997863396 626 64 64 40064 2564096
+249	15487576 16496 808270 1103448 7.323863596 9.997863596 626 64 64 40064 2564096
+250	15504072 16496 808270 1103448 7.323863596 9.997863596 626 64 64 40064 2564096
+251	15520568 22130 808272 1103450 7.323863596 9.997863596 626 0.000111596 0.000111596 0.069859096 7.795995677216e-06
+252	15542698 31740 808276 1103456 7.323871596 9.997871596 1252 0 1 626 626
+253	15574438 32366 808276 1103456 7.323871596 9.997871596 1252 0 64 40064 2564096
+254	15606804 15870 808276 1103454 7.323871596 9.997871596 626 1 1 626 626
+255	15622674 41890 808277 1103650 7.323871596 9.999052546667 1610 0 1 805 805
+256	15664564 42695 808277 1103650 7.323871596 9.999052546667 1610 0 64 51520 3297280
+257	15707259 20945 808277 1103648 7.323871596 9.999052546667 805 1 1 805 805
+258	15728204 15870 808278 1103456 7.323871596 9.997871596 626 0 0 0 0
+259	15744074 20945 808279 1103650 7.323871596 9.999052546667 805 0 0 0 0
+260	15765019 16496 808282 1103460 7.323871596 9.997871596 626 64 64 40064 2564096
+261	15781515 21750 808283 1103654 7.323871596 9.999052546667 805 64 64 51520 3297280
+262	15803265 16496 808284 1103462 7.323872172 9.997872172 626 64 64 40064 2564096
+263	15819761 16496 808286 1103464 7.323872372 9.997872372 626 64 64 40064 2564096
+264	15836257 16496 808286 1103464 7.323872372 9.997872372 626 64 64 40064 2564096
+265	15852753 22130 808288 1103466 7.323872372 9.997872372 626 0.000120372 0.000120372 0.075352872 9.070375908384e-06
+266	15874883 21750 808290 1103661 7.323877356 9.999058306667 805 64 64 51520 3297280
+267	15896633 25775 808291 1103662 7.323877456 9.999058406667 805 125.456 134.232 102562.984 13078007.306432
+268	15922408 31740 808295 1103475 7.323880372 9.997880372 1252 0 1 626 626
+269	15954148 32366 808295 1103475 7.323880372 9.997880372 1252 0 64 40064 2564096
+270	15986514 15870 808295 1103473 7.323880372 9.997880372 626 1 1 626 626
+271	16002384 41890 808296 1103631 7.323880372 9.999043770667 1610 0 1 805 805
+272	16044274 42695 808296 1103631 7.323880372 9.999043770667 1610 0 64 51520 3297280
+273	16086969 20945 808296 1103629 7.323880372 9.999043770667 805 1 1 805 805
+274	16107914 15870 808297 1103475 7.323880372 9.997880372 626 0 0 0 0
+275	16123784 20945 808298 1103631 7.323880372 9.999043770667 805 0 0 0 0
+276	16144729 16496 808301 1103479 7.323880372 9.997880372 626 64 64 40064 2564096
+277	16161225 21750 808302 1103635 7.323880372 9.999043770667 805 64 64 51520 3297280
+278	16182975 16496 808303 1103481 7.323880948 9.997880948 626 64 64 40064 2564096
+279	16199471 16496 808305 1103483 7.323881148 9.997881148 626 64 64 40064 2564096
+280	16215967 16496 808305 1103483 7.323881148 9.997881148 626 64 64 40064 2564096
+281	16232463 22130 808307 1103485 7.323881148 9.997881148 626 0.000129148 0.000129148 0.080846648 1.0441182895904e-05
+282	16254593 21750 808309 1103642 7.323886132 9.999049530667 805 64 64 51520 3297280
+283	16276343 25775 808310 1103643 7.323886232 9.999049630667 805 125.456 134.232 106485.856 14096730.090368
+284	16302118 31740 808313 1103492 7.323889148 9.997889148 1252 0 1 626 626
+285	16333858 32366 808313 1103492 7.323889148 9.997889148 1252 0 64 40064 2564096
+286	16366224 15870 808313 1103491 7.323889148 9.997889148 626 1 1 626 626
+287	16382094 15870 808314 1103492 7.323889148 9.997889148 626 0 0 0 0
+288	16397964 16496 808316 1103494 7.323889148 9.997889148 626 64 64 40064 2564096
+289	16414460 16496 808317 1103495 7.323894908 9.997894908 626 64 64 40064 2564096
+290	16430956 19626 808318 1103496 7.323895008 9.997895008 626 143.008 143.008 89523.008000001 12802506.328064
+291	16450582 27009 807719 1103765 7.318 10 1342 74 74 99308 7348792
+292	16477591 57424 807719 1103765 7.318 10 2683 0 1 1342 1342
+293	16535015 58766 807719 1103765 7.318 10 2683 0 74 99308 7348792
+294	16593781 27009 807720 1103766 7.318 10 1342 74 74 99308 7348792
+295	16620790 57424 807720 1103766 7.318 10 2683 0 1 1342 1342
+296	16678214 58766 807720 1103766 7.318 10 2683 0 74 99308 7348792
+297	16736980 27009 807721 1103767 7.318 10 1342 15 15 20130 301950
+298	16763989 60550 807721 1103767 7.318 10 2683 0 1 1342 1342
+299	16824539 61892 807721 1103767 7.318 10 2683 0 15 20130 301950
+300	16886431 32653 807738 1103526 7.3180005 9.9980005 1341 74 74 99234 7343316
+301	16919084 32653 807739 1103527 7.3180005 9.9980005 1341 74 74 99234 7343316
+302	16951737 31312 807744 1103532 7.318002 9.998002 1341 15 15 20115 301725
+303	16983049 27290 807788 1103579 7.319 9.999 1341 74 74 99234 7343316
+304	17010339 57735 807662 1103695 7.3172445 9.999270530667 2683 0 1 1341 1341
+305	17068074 59076 807662 1103695 7.3172445 9.999270530667 2683 0 74 99234 7343316
+306	17127150 27290 807789 1103580 7.319 9.999 1341 74 74 99234 7343316
+307	17154440 57735 807672 1103706 7.3172452 9.999279306667 2683 0 1 1341 1341
+308	17212175 59076 807672 1103706 7.3172452 9.999279306667 2683 0 74 99234 7343316
+309	17271251 33104 807827 1103685 7.3191854 9.999270430667 1341 74 74 99234 7343316
+310	17304355 31853 807832 1103696 7.319186 9.999279206667 1341 74 74 99234 7343316
+311	17336208 10150 808885 1103573 7.328924174667 9.998924174667 358 0 1 179 179
+312	17346358 5433 808886 1103573 7.328924174667 9.998924174667 179 100 100 17900 1790000
+313	17351791 5433 808886 1103573 7.328924174667 9.998924174667 179 100 100 17900 1790000
+314	17357224 7544 808886 1103573 7.328924174667 9.998924174667 179 7129.1666669993 7129.166667001 1276120.833393 9097678108.489
+315	17364768 5254 808924 1103611 7.329026994667 9.999026994667 179 26 26 4654 121004
+316	17370022 5254 808924 1103611 7.329026994667 9.999026994667 179 26 26 4654 121004
+317	17375276 6686 808926 1103613 7.329026994667 9.999026994667 179 0.00010282 0.00010282 0.01840478 1.8923794796e-06
+318	17381962 10150 808929 1103617 7.329034994667 9.999034994667 358 0 1 179 179
+319	17392112 10329 808929 1103617 7.329034994667 9.999034994667 358 0 64 11456 733184
+320	17402441 5075 808929 1103616 7.329034994667 9.999034994667 179 1 1 179 179
+321	17407516 5075 808930 1103617 7.329034994667 9.999034994667 179 0 0 0 0
+322	17412591 5254 808932 1103619 7.329034994667 9.999034994667 179 64 64 11456 733184
+323	17417845 5254 808933 1103620 7.329035570667 9.999035570667 179 64 64 11456 733184
+324	17423099 5254 808935 1103622 7.329035770667 9.999035770667 179 64 64 11456 733184
+325	17428353 5254 808935 1103622 7.329035770667 9.999035770667 179 64 64 11456 733184
+326	17433607 6865 808937 1103624 7.329035770667 9.999035770667 179 0.000111596 0.000111596 0.019975684 2.229206431664e-06
+327	17440472 10150 808941 1103630 7.329043770667 9.999043770667 358 0 1 179 179
+328	17450622 10329 808941 1103630 7.329043770667 9.999043770667 358 0 64 11456 733184
+329	17460951 5075 808941 1103628 7.329043770667 9.999043770667 179 1 1 179 179
+330	17466026 5075 808943 1103630 7.329043770667 9.999043770667 179 0 0 0 0
+331	17471101 5254 808947 1103634 7.329043770667 9.999043770667 179 64 64 11456 733184
+332	17476355 5254 808949 1103636 7.329044346667 9.999044346667 179 64 64 11456 733184
+333	17481609 5254 808951 1103638 7.329044546667 9.999044546667 179 64 64 11456 733184
+334	17486863 5254 808951 1103638 7.329044546667 9.999044546667 179 64 64 11456 733184
+335	17492117 6865 808953 1103640 7.329044546667 9.999044546667 179 0.000120372 0.000120372 0.021546588 2.593605890736e-06
+336	17498982 10150 808960 1103649 7.329052546667 9.999052546667 358 0 1 179 179
+337	17509132 10329 808960 1103649 7.329052546667 9.999052546667 358 0 64 11456 733184
+338	17519461 5075 808960 1103647 7.329052546667 9.999052546667 179 1 1 179 179
+339	17524536 5075 808962 1103649 7.329052546667 9.999052546667 179 0 0 0 0
+340	17529611 5254 808966 1103653 7.329052546667 9.999052546667 179 64 64 11456 733184
+341	17534865 5254 808968 1103655 7.329053122667 9.999053122667 179 64 64 11456 733184
+342	17540119 5254 808970 1103657 7.329053322667 9.999053322667 179 64 64 11456 733184
+343	17545373 5254 808970 1103657 7.329053322667 9.999053322667 179 64 64 11456 733184
+344	17550627 6865 808972 1103659 7.329053322667 9.999053322667 179 0.000129148 0.000129148 0.023117492 2.985577856816e-06
+345	17557492 10150 808982 1103670 7.329061322667 9.999061322667 358 0 1 179 179
+346	17567642 10329 808982 1103670 7.329061322667 9.999061322667 358 0 64 11456 733184
+347	17577971 5075 808982 1103669 7.329061322667 9.999061322667 179 1 1 179 179
+348	17583046 5075 808983 1103670 7.329061322667 9.999061322667 179 0 0 0 0
+349	17588121 5254 808985 1103672 7.329061322667 9.999061322667 179 64 64 11456 733184
+350	17593375 5254 808986 1103673 7.329067082667 9.999067082667 179 64 64 11456 733184
+351	17598629 6149 808987 1103674 7.329067182667 9.999067182667 179 143.008 143.008 25598.432 3660780.563456
+352	17604778 17 1103768 1103768 10 10 1 0 0 0 0
+353	17604795 17 1103768 1103768 10 10 1 0 0 0 0
+354	17604812 17 1103768 1103768 10 10 1 0 0 0 0
+355	17604829 17 1103768 1103768 10 10 1 0 0 0 0
+
+ 10 1 0 0 0 0
+

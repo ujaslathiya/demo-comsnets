@@ -1,0 +1,25 @@
+# Build output
+out/
+*.o
+*.so
+*.so.*
+*.a
+*.dylib
+*_m.cc
+*_m.h
+
+# External dependencies built locally
+/inet/
+
+# OMNeT++ runtime files
+.cmdenv-log
+.qtenvrc
+*.vec
+*.sca
+results/macos/
+results/run_*/*.vec
+
+# OS / editor
+.DS_Store
+.metadata/
+__pycache__/

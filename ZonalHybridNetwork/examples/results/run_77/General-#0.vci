@@ -1,0 +1,564 @@
+file 9717049 1787206043                                         
+version 3
+run General-0-20260820-11:37:15-2819896
+attr configname General
+attr datetime 20260820-11:37:15
+attr datetimef 20260820-113715
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network zonal_hybrid.ZonalHybridNetwork
+attr processid 2819896
+attr repetition 0
+attr replication #0
+attr resultdir results/run_77
+attr runnumber 0
+attr seedset 77
+config result-dir results/run_77
+config seed-set 77
+config sim-time-limit 10.0s
+config network zonal_hybrid.ZonalHybridNetwork
+config sim-time-limit 500s
+config cmdenv-express-mode false
+config cmdenv-event-banners true
+config *.CAN_Std_Bus.bandwidth 500kbps
+config *.CAN_Std_node.sourceApp[0].idDataFrames "\"100\""
+config *.CAN_Std_node.numSourceApps 1
+config *.CAN_Std_node.sourceApp[0].typename CanTrafficSourceAppBase
+config *.CAN_Std_node.sourceApp[0].periodicityDataFrames "\"0.002\""
+config *.CAN_Std_node.sourceApp[0].initialDataFrameOffset "\"0.001\""
+config *.CAN_Std_node.sourceApp[0].dataLengthDataFrames "\"8\""
+config *.CAN_Std_node.numSinkApps 1
+config *.CAN_Std_node.sinkApp[0].typename CanTrafficSinkAppBase
+config *.CAN_Std_node.bufferIn.idIncomingFrames "\"100,110,120,400\""
+config *.CAN_FD_Bus_*.bandwidth 2000kbps
+config *.CAN_FD_Bus_*.dataBitrate 5000kbps
+config *.CAN_FD_Node_A.sourceApp[0].idDataFrames "\"300\""
+config *.CAN_FD_Node_B.sourceApp[0].idDataFrames "\"200\""
+config *.CAN_FD_Node_*.numSourceApps 1
+config *.CAN_FD_Node_*.sourceApp[0].typename CanTrafficSourceAppBase
+config *.CAN_FD_Node_*.sourceApp[0].periodicityDataFrames "\"0.002\""
+config *.CAN_FD_Node_A.sourceApp[0].initialDataFrameOffset "\"0.002\""
+config *.CAN_FD_Node_B.sourceApp[0].initialDataFrameOffset "\"0.003\""
+config *.CAN_FD_Node_*.sourceApp[0].dataLengthDataFrames "\"64\""
+config *.CAN_FD_Node_*.numSinkApps 1
+config *.CAN_FD_Node_*.sinkApp[0].typename CanTrafficSinkAppBase
+config *.CAN_FD_Node_*.bufferIn.idIncomingFrames "\"200,210,220,300\""
+config *.Ethernet_Node_*.csmacdSupport false
+config *.Ethernet_Node_*.cli.destAddress "\"02:00:00:00:00:01\""
+config *.Ethernet_Node_*.cli.startTime 0s
+config *.Ethernet_Node_*.cli.sendInterval 0.002s
+config *.Ethernet_Node_*.cli.reqLength 100B
+config *.LIN_Bus.baudRate 20kbps
+config *.LIN_Bus.numGates 4
+config *.LIN_Bus.logic.numGates 4
+config *.LIN_Slave_*.isMaster false
+config *.LIN_Slave_*.baudRate 20kbps
+config *.LIN_Slave_A.signalConfiguration "\"30:0:1\""
+config *.LIN_Slave_B.signalConfiguration "\"31:0:2\""
+config *.LIN_Slave_C.signalConfiguration "\"32:0:3\""
+config *.Gateway_*.enableAggregation true
+config *.Gateway_*.enableFragmentation true
+config *.Central_Gateway.ethg[*].bitrate 1Gbps
+config *.Ethernet_Switch_*.ethg[*].bitrate 100Mbps
+config **.mac[*].duplexMode true
+config **.mac[*].csmaCdEnabled false
+config **.txQueue.queueLength.result-recording-modes mean,max,vector
+config **.txQueue.queuingDelay.result-recording-modes mean,max,vector
+config **.busLoad.result-recording-modes mean,timeavg
+config **.canInputQueueLength.result-recording-modes mean,max,vector
+config **.canFdInputQueueLength.result-recording-modes mean,max,vector
+config **.linInputQueueLength.result-recording-modes mean,max,vector
+config **.canQueuingDelay.result-recording-modes mean,max,vector
+config **.canFdQueuingDelay.result-recording-modes mean,max,vector
+config **.linQueuingDelay.result-recording-modes mean,max,vector
+config **.inputDropCount.result-recording-modes last,vector
+config **.processingDelay.result-recording-modes mean,vector
+config **.uplinkUtil.result-recording-modes mean,timeavg
+config **.port[*].queueLength.result-recording-modes mean,max
+config **.port[*].queuingDelay.result-recording-modes mean,max
+config **.port[*].dropCount.result-recording-modes last
+
+vector 0 ZonalHybridNetwork.CAN_Std_node.canClock clockDrift:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source clockDrift
+attr title clockDrift
+attr unit s
+vector 1 ZonalHybridNetwork.CAN_FD_Node_A.canClock clockDrift:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source clockDrift
+attr title clockDrift
+attr unit s
+vector 2 ZonalHybridNetwork.CAN_FD_Node_B.canClock clockDrift:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source clockDrift
+attr title clockDrift
+attr unit s
+vector 3 ZonalHybridNetwork.Ethernet_Node_A.cli sentPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source sentPk
+attr title "packets sent, packetBytes"
+vector 4 ZonalHybridNetwork.Ethernet_Node_A.llc dsap:vector ETV
+attr recordingmode vector
+attr title "dsap registering"
+vector 5 ZonalHybridNetwork.Ethernet_Node_B.cli sentPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source sentPk
+attr title "packets sent, packetBytes"
+vector 6 ZonalHybridNetwork.Ethernet_Node_B.llc dsap:vector ETV
+attr recordingmode vector
+attr title "dsap registering"
+vector 7 ZonalHybridNetwork.Ethernet_Node_C.cli sentPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source sentPk
+attr title "packets sent, packetBytes"
+vector 8 ZonalHybridNetwork.Ethernet_Node_C.llc dsap:vector ETV
+attr recordingmode vector
+attr title "dsap registering"
+vector 9 ZonalHybridNetwork.Ethernet_Node_A.llc encapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source encapPk
+attr title "packets encapsulated, packetBytes"
+vector 10 ZonalHybridNetwork.Ethernet_Node_B.llc encapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source encapPk
+attr title "packets encapsulated, packetBytes"
+vector 11 ZonalHybridNetwork.Ethernet_Node_C.llc encapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source encapPk
+attr title "packets encapsulated, packetBytes"
+vector 12 ZonalHybridNetwork.Ethernet_Node_A.mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 13 ZonalHybridNetwork.Ethernet_Node_B.mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 14 ZonalHybridNetwork.Ethernet_Node_C.mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 15 ZonalHybridNetwork.Ethernet_Node_A.mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 16 ZonalHybridNetwork.Ethernet_Node_B.mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 17 ZonalHybridNetwork.Ethernet_Node_C.mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 18 ZonalHybridNetwork.Ethernet_Switch_A.eth[0].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 19 ZonalHybridNetwork.Ethernet_Switch_A.eth[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 20 ZonalHybridNetwork.Ethernet_Switch_B.eth[0].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 21 ZonalHybridNetwork.Ethernet_Switch_B.eth[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 22 ZonalHybridNetwork.Ethernet_Switch_C.eth[0].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 23 ZonalHybridNetwork.Ethernet_Switch_C.eth[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 24 ZonalHybridNetwork.Ethernet_Switch_A.eth[1].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 25 ZonalHybridNetwork.Ethernet_Switch_B.eth[1].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 26 ZonalHybridNetwork.Ethernet_Switch_C.eth[1].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 27 ZonalHybridNetwork.Ethernet_Switch_A.eth[1].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 28 ZonalHybridNetwork.Ethernet_Switch_B.eth[1].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 29 ZonalHybridNetwork.Ethernet_Switch_C.eth[1].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 30 ZonalHybridNetwork.Gateway_3 ethE2EDelay:vector ETV
+attr recordingmode vector
+attr source ethE2EDelay
+attr title "ETH e2e delay (node send to GW receive)"
+attr unit us
+vector 31 ZonalHybridNetwork.CAN_Std_node.bufferOut rxPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPk
+attr title "RX Packets, packetBytes"
+vector 32 ZonalHybridNetwork.CAN_Std_node.bufferOut length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 33 ZonalHybridNetwork.CAN_Std_node.bufferOut size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 34 ZonalHybridNetwork.CAN_Std_Bus.canBusLogic arbitrationLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source arbitrationLength
+attr title "Arbitration Length"
+attr unit packets
+vector 35 ZonalHybridNetwork.CAN_Std_node.bufferOut txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "TX Packets, packetBytes"
+vector 36 ZonalHybridNetwork.Gateway_1 canInputQueueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source canInputQueueLength
+attr title "CAN input queue length"
+attr unit frames
+vector 37 ZonalHybridNetwork.Gateway_1 processingDelay:vector ETV
+attr recordingmode vector
+attr source processingDelay
+attr title "Gateway processing delay"
+attr unit us
+vector 38 ZonalHybridNetwork.Gateway_1 canQueuingDelay:vector ETV
+attr recordingmode vector
+attr source canQueuingDelay
+attr title "CAN gateway queuing delay"
+attr unit us
+vector 39 ZonalHybridNetwork.Gateway_1 canE2EDelay:vector ETV
+attr recordingmode vector
+attr source canE2EDelay
+attr title "CAN e2e delay (ECU to GW Ethernet departure)"
+attr unit us
+vector 40 ZonalHybridNetwork.CAN_FD_Node_A.bufferOut rxPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPk
+attr title "RX Packets, packetBytes"
+vector 41 ZonalHybridNetwork.CAN_FD_Node_A.bufferOut length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 42 ZonalHybridNetwork.CAN_FD_Node_A.bufferOut size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 43 ZonalHybridNetwork.CAN_FD_Bus_A.canBusLogic arbitrationLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source arbitrationLength
+attr title "Arbitration Length"
+attr unit packets
+vector 44 ZonalHybridNetwork.CAN_FD_Node_A.bufferOut txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "TX Packets, packetBytes"
+vector 45 ZonalHybridNetwork.Central_Gateway.eth[0].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 46 ZonalHybridNetwork.Central_Gateway.eth[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 47 ZonalHybridNetwork.Central_Gateway.eth[1].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 48 ZonalHybridNetwork.Central_Gateway.eth[2].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 49 ZonalHybridNetwork.Central_Gateway.eth[3].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 50 ZonalHybridNetwork.Central_Gateway.eth[1].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 51 ZonalHybridNetwork.Central_Gateway.eth[2].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 52 ZonalHybridNetwork.Central_Gateway.eth[3].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 53 ZonalHybridNetwork.Gateway_2 ethE2EDelay:vector ETV
+attr recordingmode vector
+attr source ethE2EDelay
+attr title "ETH e2e delay (node send to GW receive)"
+attr unit us
+vector 54 ZonalHybridNetwork.Gateway_4 ethE2EDelay:vector ETV
+attr recordingmode vector
+attr source ethE2EDelay
+attr title "ETH e2e delay (node send to GW receive)"
+attr unit us
+vector 55 ZonalHybridNetwork.CAN_FD_Node_B.bufferOut rxPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPk
+attr title "RX Packets, packetBytes"
+vector 56 ZonalHybridNetwork.CAN_FD_Node_B.bufferOut length:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source length
+attr title "Queue Length"
+attr unit packets
+vector 57 ZonalHybridNetwork.CAN_FD_Node_B.bufferOut size:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source size
+attr title "Queue Size"
+attr unit B
+vector 58 ZonalHybridNetwork.CAN_FD_Bus_B.canBusLogic arbitrationLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source arbitrationLength
+attr title "Arbitration Length"
+attr unit packets
+vector 59 ZonalHybridNetwork.CAN_FD_Node_B.bufferOut txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "TX Packets, packetBytes"
+vector 60 ZonalHybridNetwork.Gateway_2 canFdInputQueueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source canFdInputQueueLength
+attr title "CAN-FD input queue length"
+attr unit frames
+vector 61 ZonalHybridNetwork.Gateway_2 processingDelay:vector ETV
+attr recordingmode vector
+attr source processingDelay
+attr title "Gateway processing delay"
+attr unit us
+vector 62 ZonalHybridNetwork.Gateway_2 canFdQueuingDelay:vector ETV
+attr recordingmode vector
+attr source canFdQueuingDelay
+attr title "CAN-FD gateway queuing delay"
+attr unit us
+vector 63 ZonalHybridNetwork.Gateway_2 canFdE2EDelay:vector ETV
+attr recordingmode vector
+attr source canFdE2EDelay
+attr title "CAN-FD e2e delay (ECU to GW Ethernet departure)"
+attr unit us
+vector 64 ZonalHybridNetwork.Central_Gateway.eth[1].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 65 ZonalHybridNetwork.Central_Gateway.eth[1].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 66 ZonalHybridNetwork.Central_Gateway.eth[0].mac rxPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkFromHL
+attr title "packet bytes from higher layer, packetBytes"
+vector 67 ZonalHybridNetwork.Central_Gateway.eth[0].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source txPk
+attr title "packets transmitted, packetBytes"
+vector 68 ZonalHybridNetwork.Gateway_1 ethE2EDelay:vector ETV
+attr recordingmode vector
+attr source ethE2EDelay
+attr title "ETH e2e delay (node send to GW receive)"
+attr unit us
+vector 69 ZonalHybridNetwork.Gateway_4 linInputQueueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source linInputQueueLength
+attr title "LIN input queue length"
+attr unit frames
+vector 70 ZonalHybridNetwork.Gateway_4 processingDelay:vector ETV
+attr recordingmode vector
+attr source processingDelay
+attr title "Gateway processing delay"
+attr unit us
+vector 71 ZonalHybridNetwork.Gateway_4 linQueuingDelay:vector ETV
+attr recordingmode vector
+attr source linQueuingDelay
+attr title "LIN gateway queuing delay"
+attr unit us
+vector 72 ZonalHybridNetwork.Gateway_4 linE2EDelay:vector ETV
+attr recordingmode vector
+attr source linE2EDelay
+attr title "LIN e2e delay (ECU to GW Ethernet departure)"
+attr unit us
+vector 73 ZonalHybridNetwork.Central_Gateway.eth[3].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 74 ZonalHybridNetwork.Central_Gateway.eth[3].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 75 ZonalHybridNetwork.Gateway_1 inputDropCount:vector ETV
+attr recordingmode vector
+attr source inputDropCount
+attr title "Gateway input drop count"
+vector 76 ZonalHybridNetwork.Gateway_2 inputDropCount:vector ETV
+attr recordingmode vector
+attr source inputDropCount
+attr title "Gateway input drop count"
+vector 77 ZonalHybridNetwork.Gateway_3 inputDropCount:vector ETV
+attr recordingmode vector
+attr source inputDropCount
+attr title "Gateway input drop count"
+vector 78 ZonalHybridNetwork.Gateway_4 inputDropCount:vector ETV
+attr recordingmode vector
+attr source inputDropCount
+attr title "Gateway input drop count"
+0	19859 84217 0 696215 0 9.999 5002 0 0 0 0
+1	104076 83099 0 696259 0 10 5002 0 0 0 0
+2	187175 84204 0 696214 0 9.999 5001 0 0 0 0
+3	271379 93093 1 696260 0 10 5001 100 100 500100 50010000
+4	364472 16 2 7 0 0 2 1 1 2 2
+5	364488 93093 3 696261 0 10 5001 100 100 500100 50010000
+6	457581 16 4 9 0 0 2 1 1 2 2
+7	457597 93093 5 696262 0 10 5001 100 100 500100 50010000
+8	550690 17 6 11 0 0 2 1 1 2 2
+9	550707 93093 8 696264 0 10 5001 100 100 500100 50010000
+10	643800 98095 10 696265 0 10 5001 100 100 500100 50010000
+11	741895 98095 12 696266 0 10 5001 100 100 500100 50010000
+12	839990 98095 13 696267 0 10 5001 121 121 605121 73219641
+13	938085 98095 14 696268 0 10 5001 121 121 605121 73219641
+14	1036180 98095 15 696269 0 10 5001 121 121 605121 73219641
+15	1134275 124198 19 696134 0.00001032 9.99801032 5000 121 121 605000 73205000
+16	1258473 124198 20 696135 0.00001032 9.99801032 5000 121 121 605000 73205000
+17	1382671 124198 21 696136 0.00001032 9.99801032 5000 121 121 605000 73205000
+18	1506869 124198 22 696137 0.00001042 9.99801042 5000 121 121 605000 73205000
+19	1631067 124198 22 696137 0.00001042 9.99801042 5000 121 121 605000 73205000
+20	1755265 124198 23 696138 0.00001042 9.99801042 5000 121 121 605000 73205000
+21	1879463 124198 23 696138 0.00001042 9.99801042 5000 121 121 605000 73205000
+22	2003661 124198 24 696139 0.00001042 9.99801042 5000 121 121 605000 73205000
+23	2127859 124198 24 696139 0.00001042 9.99801042 5000 121 121 605000 73205000
+24	2252057 124198 28 696143 0.00001042 9.99801042 5000 121 121 605000 73205000
+25	2376255 124198 29 696144 0.00001042 9.99801042 5000 121 121 605000 73205000
+26	2500453 124198 30 696145 0.00001042 9.99801042 5000 121 121 605000 73205000
+27	2624651 124198 37 696152 0.00002074 9.99802074 5000 121 121 605000 73205000
+28	2748849 124198 38 696153 0.00002074 9.99802074 5000 121 121 605000 73205000
+29	2873047 124198 39 696154 0.00002074 9.99802074 5000 121 121 605000 73205000
+30	2997245 702795 40 696201 0.00002084 9.99874868 25663 20.84 1014.6 11097742.999996 10915292772.373
+31	3700040 94201 47 696217 0.001 9.999 5000 15 15 75000 1125000
+32	3794241 188402 47 696238 0.001 9.99924 10000 0 1 5000 5000
+33	3982643 193402 47 696238 0.001 9.99924 10000 0 15 75000 1125000
+34	4176045 89201 47 696217 0.001 9.999 5000 1 1 5000 5000
+35	4265246 109201 48 696223 0.001002 9.999002 5000 15 15 75000 1125000
+36	4374447 198404 58 696249 0.00174 9.99974 10000 0 1 5000 5000
+37	4572851 114202 59 696249 0.00174 9.99974 5000 1000 1000 5000000 5000000000
+38	4687053 114202 59 696249 0.00174 9.99974 5000 1000 1000 5000000 5000000000
+39	4801255 164615 59 696249 0.00174 9.99974 5000 1739.9999999981 1740.0000000007 8700000.0000005 15138000000
+40	4965870 93083 64 696263 0.002 10 5000 74 74 370000 27380000
+41	5058953 197264 64 696263 0.002 10 9999 0 1 5000 5000
+42	5256217 202264 64 696263 0.002 10 9999 0 74 370000 27380000
+43	5458481 88083 64 696263 0.002 10 5000 1 1 5000 5000
+44	5546564 114179 74 696129 0.0020005 9.9980005 4999 74 74 369926 27374524
+45	5660743 119179 112 696191 0.00274282 9.99874282 4999 26 26 129974 3379324
+46	5779922 119179 112 696191 0.00274282 9.99874282 4999 26 26 129974 3379324
+47	5899101 137721 114 696193 0.00274282 9.99874282 5665 26 26 147290 3829540
+48	6036822 251881 115 696194 0.00274282 9.99874282 10663 26 82 557126 37436092
+49	6288703 233339 116 696195 0.00274282 9.99874282 9997 26 82 539810 36985876
+50	6522042 137721 118 696197 0.00274858 9.99874858 5665 26 26 147290 3829540
+51	6659763 251881 119 696198 0.00274858 9.99874858 10663 26 82 557126 37436092
+52	6911644 233339 120 696199 0.00274858 9.99874858 9997 26 82 539810 36985876
+53	7144983 166046 121 696200 0.00274868 9.99874868 5665 1008.68 1008.68 5714172.1999999 5763771214.6956
+54	7311029 278327 123 696202 0.00274868 9.99874868 9997 1008.68 1014.6 10113362.119998 10231166250.336
+55	7589356 94186 143 696216 0.003 9.999 4999 74 74 369926 27374524
+56	7683542 198370 143 696232 0.003 9.9991268 9998 0 1 4999 4999
+57	7881912 203369 143 696232 0.003 9.9991268 9998 0 74 369926 27374524
+58	8085281 89187 143 696216 0.003 9.999 4999 1 1 4999 4999
+59	8174468 114182 145 696218 0.0030005 9.9990005 4999 74 74 369926 27374524
+60	8288650 218366 158 696233 0.0031268 9.9991268 9998 0 1 4999 4999
+61	8507016 124180 160 696233 0.0031268 9.9991268 4999 1000 1000 4999000 4999000000
+62	8631196 124180 160 696233 0.0031268 9.9991268 4999 1000 1000 4999000 4999000000
+63	8755376 172225 160 696233 0.0031268 9.9991268 4999 1126.799999998 1126.8000000006 5632873.2000002 6347121521.7603
+64	8927601 114160 221 696167 0.0041341 9.9981341 4998 82 82 409836 33606552
+65	9041761 114160 221 696167 0.0041341 9.9981341 4998 82 82 409836 33606552
+66	9155921 132702 223 696169 0.0041341 9.9981341 5664 26 82 427152 34056768
+67	9288623 132702 227 696173 0.0041413 9.9981413 5664 26 82 427152 34056768
+68	9421325 156024 230 696176 0.0041414 9.9981414 5664 1008.68 1014.6 5742751.6799997 5822618911.7179
+69	9577349 35806 580 696254 0.009777846667 9.999777846667 1334 0 1 667 667
+70	9613155 19904 581 696254 0.009777846667 9.999777846667 667 1000 1000 667000 667000000
+71	9633059 19904 581 696254 0.009777846667 9.999777846667 667 1000 1000 667000 667000000
+72	9652963 26941 581 696254 0.009777846667 9.999777846667 667 8029.1666669989 8029.1666670007 5355454.166889 42999834083.431
+73	9679904 18542 674 695281 0.010780666667 9.985780666667 666 26 26 17316 450216
+74	9698446 18542 674 695281 0.010780666667 9.985780666667 666 26 26 17316 450216
+75	9716988 15 696270 696270 10 10 1 0 0 0 0
+76	9717003 15 696270 696270 10 10 1 0 0 0 0
+77	9717018 15 696270 696270 10 10 1 0 0 0 0
+78	9717033 15 696270 696270 10 10 1 0 0 0 0
+

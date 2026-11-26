@@ -1,0 +1,54 @@
+# generated files
+.settings/
+.metadata/
+.project
+.cproject
+.pydevproject
+*_m.*
+Makefile
+Makefile.vc
+/doc/doxy/
+/doc/neddoc/
+/doc/index.html
+
+# settings
+*.qtenvrc
+*.tkenvrc
+*.tkenvlog
+*.cmdenv-log
+
+# results
+/examples/*/results/
+/examples/*/*/results/
+/examples/*/*/*/results/
+*.vci
+*.vec
+*.sca
+*.anf
+
+# tests
+/tests/*/work/
+
+# binary files
+/out
+*.so
+*.dylib
+*.dll
+*.def
+*.a
+*.lib
+*.exe
+*.o
+*.obj
+
+# local files not to be committed
+.oppfeaturestate
+.nedexclusions
+src/fico4omnet/features.h
+
+# backup / temp files
+*.backup
+*.bak
+*.swp
+*~
+.DS_Store

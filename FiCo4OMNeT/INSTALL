@@ -1,0 +1,78 @@
+INSTALLATION INSTRUCTIONS
+=========================
+
+PREREQUISITES
+-------------
+- OMNeT++ 6.0.2 or later (https://omnetpp.org/download/)
+- C++17 compiler (GCC 9+ or Clang 10+)
+- See REQUIREMENTS.md for full details
+
+
+QUICK START (Command Line)
+--------------------------
+1. Clone the repository:
+   # FiCo4OMNeT (with the CAN-FD extension) is included in this repository
+   cd FiCo4OMNeT
+
+2. Ensure OMNeT++ is in your PATH:
+   source /path/to/omnetpp/setenv
+
+3. Generate makefiles:
+   make makefiles
+
+4. Build:
+   make                    # Debug build
+   make MODE=release       # Release build
+
+5. Run an example:
+   cd examples/can/basic
+   ./run
+
+
+QUICK START (OMNeT++ IDE)
+-------------------------
+1. Open OMNeT++ IDE
+
+2. Import project:
+   File → Import → General → Existing Projects into Workspace
+   Select the CANFD_Omnet directory
+   Do NOT check "Copy projects into workspace"
+
+3. Build:
+   Press Ctrl+B (or Project → Build All)
+
+4. Run simulation:
+   Navigate to examples/can/basic/
+   Right-click omnetpp.ini → Run As → OMNeT++ Simulation
+
+
+RUNNING EXAMPLES
+----------------
+Several ready-to-run examples are provided:
+
+  examples/can/basic/       - Basic CAN network
+  examples/heterogeneous/   - Mixed CAN + CAN-FD traffic
+
+Each example directory contains:
+  - omnetpp.ini: Simulation configuration
+  - *.ned: Network topology definition
+  - run: Shell script to launch simulation
+
+
+TROUBLESHOOTING
+---------------
+If make fails with "nedtool not found":
+  → Ensure OMNeT++ setenv has been sourced
+
+If simulation crashes at startup:
+  → Rebuild with: make clean && make
+
+For IDE indexer issues:
+  → Right-click project → Index → Rebuild
+
+
+NOTES
+-----
+- The build creates a shared library (libFiCo4OMNeT.so) in src/
+- Adding/removing source files requires: make makefiles
+- Generated files (*_m.cc, *_m.h) are auto-created from .msg files

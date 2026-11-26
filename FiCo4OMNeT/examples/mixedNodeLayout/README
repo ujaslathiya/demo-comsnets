@@ -1,0 +1,17 @@
+Mixed CAN and CAN-FD Network Demo
+==================================
+
+This example demonstrates Classical CAN and CAN-FD frames coexisting on the same bus.
+
+Network:
+- canNode: Sends GREEN frames (Classical CAN, 8 bytes, ID=100)
+- canFdNode: Sends BLUE frames (CAN-FD, 64 bytes, ID=50)
+
+Run:
+  ./run omnetpp.ini          # GUI mode
+  ./run -u Cmdenv omnetpp.ini # Command-line mode
+
+Observe:
+- Blue CAN-FD frames transmit faster despite 8x more data
+- Proper arbitration (ID 50 wins over ID 100)
+- Color-coded visualization

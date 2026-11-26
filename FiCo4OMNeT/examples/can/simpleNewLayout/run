@@ -1,0 +1,2 @@
+#!/bin/bash
+opp_run -l ../../../out/clang-release/src/libFiCo4OMNeT.so -n ../../../src:../../../examples "$@"
